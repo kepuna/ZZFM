@@ -1,19 +1,19 @@
 //
-//  ZFMHomeAPIManager.m
+//  ZFMHotGuessAPIManager.m
 //  ZZFM
 //
 //  Created by donews on 2018/7/24.
 //  Copyright © 2018年 donews. All rights reserved.
 //
 
-#import "ZFMHomeAPIManager.h"
+#import "ZFMHotGuessAPIManager.h"
 #import "Target_ZFMRequestService.h"
 
-@interface ZFMHomeAPIManager() <CTAPIManagerValidator, CTAPIManagerParamSource>
+@interface ZFMHotGuessAPIManager() <CTAPIManagerValidator, CTAPIManagerParamSource>
 
 @end
 
-@implementation ZFMHomeAPIManager
+@implementation ZFMHotGuessAPIManager
 
 #pragma mark - life cycle
 - (instancetype)init
@@ -29,8 +29,7 @@
 #pragma mark - CTAPIManager
 - (NSString *_Nonnull)methodName
 {
-//    return @"public/characters";
-    return @"http://mobile.ximalaya.com/mobile/discovery/v4/recommends?channel=ios-b1&device=iPhone&includeActivity=true&includeSpecial=true&scale=2&version=5.4.21";
+    return @"http://mobile.ximalaya.com/mobile/discovery/v2/recommend/hotAndGuess?code=43_110000_1100&device=iPhone&version=5.4.21";
 }
 
 - (NSString *_Nonnull)serviceIdentifier

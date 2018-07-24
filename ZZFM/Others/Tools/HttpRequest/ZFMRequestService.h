@@ -1,5 +1,5 @@
 //
-//  ZFMHomeService.h
+//  ZFMRequestService.h
 //  ZZFM
 //
 //  Created by donews on 2018/7/24.
@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #if __has_include(<CTNetworking/CTNetworking.h>)
 #import <CTNetworking/CTNetworking.h>
 #else
 #import "CTNetworking.h"
 #endif
 
-@interface ZFMHomeService : NSObject <CTServiceProtocol>
+@interface ZFMRequestService : NSObject <CTServiceProtocol>
 
 @end

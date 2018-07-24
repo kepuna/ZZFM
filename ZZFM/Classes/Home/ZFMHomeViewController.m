@@ -8,11 +8,13 @@
 
 #import "ZFMHomeViewController.h"
 #import "ZFMHomeAPIManager.h"
+#import "ZFMHotGuessAPIManager.h"
 
 @interface ZFMHomeViewController () <CTAPIManagerCallBackDelegate>
 
 @property (nonatomic, strong) UIButton *startRequestButton;
 @property (nonatomic, strong) ZFMHomeAPIManager *homeAPIManager;
+@property (nonatomic, strong) ZFMHotGuessAPIManager *hotAPIManager;
 
 @end
 
@@ -21,7 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     self.startRequestButton.center = self.view.center;
     [self.startRequestButton sizeToFit];
     [self.view addSubview:self.startRequestButton];
@@ -29,7 +30,8 @@
 
 
 - (void)didTappedStartButton:(UIButton *)sender {
-    [self.homeAPIManager loadData];
+//    [self.homeAPIManager loadData];
+    [self.hotAPIManager loadData];
 }
 
 #pragma mark - CTAPIManagerCallBackDelegate
@@ -44,13 +46,20 @@
 }
 
 #pragma mark - Getters & Setters
-- (ZFMHomeAPIManager *)homeAPIManager
-{
+- (ZFMHomeAPIManager *)homeAPIManager {
     if (_homeAPIManager == nil) {
         _homeAPIManager = [[ZFMHomeAPIManager alloc] init];
         _homeAPIManager.delegate = self;
     }
     return _homeAPIManager;
+}
+
+- (ZFMHotGuessAPIManager *)hotAPIManager {
+    if (_hotAPIManager == nil) {
+        _hotAPIManager = [[ZFMHotGuessAPIManager alloc] init];
+        _hotAPIManager.delegate = self;
+    }
+    return _hotAPIManager;
 }
 
 - (UIButton *)startRequestButton {
