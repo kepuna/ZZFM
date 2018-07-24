@@ -21,7 +21,6 @@
 		B1387ABC2100301400961510 /* MainFrameworkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387AAD2100301400961510 /* MainFrameworkAPI.m */; };
 		B1387ABD2100301400961510 /* NXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387AB02100301400961510 /* NXTabBar.m */; };
 		B1387ABE2100301400961510 /* NXTabBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387AB32100301400961510 /* NXTabBarConfig.m */; };
-		B1387ABF2100301400961510 /* LSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387AB42100301400961510 /* LSTabBar.m */; };
 		B1387AC02100301400961510 /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387AB52100301400961510 /* NavigationView.m */; };
 		B1387AC12100301400961510 /* NXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387AB62100301400961510 /* NXNavigationController.m */; };
 		B1387AC22100301400961510 /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387AB92100301400961510 /* UITabBar+badge.m */; };
@@ -70,7 +69,6 @@
 		B1387AA82100301400961510 /* NXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTabBarController.m; sourceTree = "<group>"; };
 		B1387AA92100301400961510 /* NavigationConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationConfig.m; sourceTree = "<group>"; };
 		B1387AAA2100301400961510 /* NavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationView.h; sourceTree = "<group>"; };
-		B1387AAB2100301400961510 /* LSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBar.h; sourceTree = "<group>"; };
 		B1387AAC2100301400961510 /* NXTabBarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTabBarConfig.h; sourceTree = "<group>"; };
 		B1387AAD2100301400961510 /* MainFrameworkAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFrameworkAPI.m; sourceTree = "<group>"; };
 		B1387AAE2100301400961510 /* NXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXNavigationController.h; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 		B1387AB12100301400961510 /* NavigationConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationConfig.h; sourceTree = "<group>"; };
 		B1387AB22100301400961510 /* NXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTabBarController.h; sourceTree = "<group>"; };
 		B1387AB32100301400961510 /* NXTabBarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTabBarConfig.m; sourceTree = "<group>"; };
-		B1387AB42100301400961510 /* LSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBar.m; sourceTree = "<group>"; };
 		B1387AB52100301400961510 /* NavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationView.m; sourceTree = "<group>"; };
 		B1387AB62100301400961510 /* NXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXNavigationController.m; sourceTree = "<group>"; };
 		B1387AB72100301400961510 /* MainFrameworkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFrameworkAPI.h; sourceTree = "<group>"; };
@@ -213,7 +210,6 @@
 				B1387AA82100301400961510 /* NXTabBarController.m */,
 				B1387AA92100301400961510 /* NavigationConfig.m */,
 				B1387AAA2100301400961510 /* NavigationView.h */,
-				B1387AAB2100301400961510 /* LSTabBar.h */,
 				B1387AAC2100301400961510 /* NXTabBarConfig.h */,
 				B1387AAD2100301400961510 /* MainFrameworkAPI.m */,
 				B1387AAE2100301400961510 /* NXNavigationController.h */,
@@ -222,7 +218,6 @@
 				B1387AB12100301400961510 /* NavigationConfig.h */,
 				B1387AB22100301400961510 /* NXTabBarController.h */,
 				B1387AB32100301400961510 /* NXTabBarConfig.m */,
-				B1387AB42100301400961510 /* LSTabBar.m */,
 				B1387AB52100301400961510 /* NavigationView.m */,
 				B1387AB62100301400961510 /* NXNavigationController.m */,
 				B1387AB72100301400961510 /* MainFrameworkAPI.h */,
@@ -443,7 +438,6 @@
 				B1387A44210027A100961510 /* AppDelegate.m in Sources */,
 				B1387ABA2100301400961510 /* NXTabBarController.m in Sources */,
 				B1387AC02100301400961510 /* NavigationView.m in Sources */,
-				B1387ABF2100301400961510 /* LSTabBar.m in Sources */,
 				B1387ABD2100301400961510 /* NXTabBar.m in Sources */,
 				B1387AE7210036C000961510 /* ZFMDiscoverViewController.m in Sources */,
 				B1387AE5210036C000961510 /* ZFMHomeViewController.m in Sources */,

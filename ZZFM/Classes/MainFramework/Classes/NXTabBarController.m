@@ -9,7 +9,6 @@
 #import "NXTabBarController.h"
 #import "NXNavigationController.h"
 #import "NXTabBar.h"
-#import "LSTabBar.h"
 #import "UITabBar+badge.h"
 #import <Accelerate/Accelerate.h>
 
@@ -96,10 +95,11 @@
         [self setValue:self.customTabBar forKey:@"tabBar"];
         [self.customTabBar setCenterIcon:config.centerIcon];
         self.customTabBar.centerIconClickBlock = config.centerIconClickBlock;
-    }else {
-        LSTabBar *tabBar = [[LSTabBar alloc] init];
-        [self setValue:tabBar forKey:@"tabBar"];
     }
+//    else {
+//        LSTabBar *tabBar = [[LSTabBar alloc] init];
+//        [self setValue:tabBar forKey:@"tabBar"];
+//    }
     
 
 

@@ -27,7 +27,7 @@
     ZFMDiscoverViewController *vc3 = [[ZFMDiscoverViewController alloc] init];
     ZFMMineViewController *vc4 = [[ZFMMineViewController alloc] init];
     
-   [[MainFrameworkAPI sharedInstance] addChildContollers:@[vc1,vc2,vc3,vc4] titles:@[@"首页",@"我听",@"发现",@"我的"] imagesNormal:@[@"tabbar_download_n",@"tabbar_find_n",@"tabbar_sound_n",@"tabbar_me_n"] imagesSeleted:@[@"tabbar_download_h",@"tabbar_find_h",@"tabbar_sound_h",@"tabbar_me_h"] inBundle:ZFMBundleMainFramework];
+   [[MainFrameworkAPI sharedInstance] addChildContollers:@[vc1,vc2,vc3,vc4] titles:nil imagesNormal:@[@"tabbar_icon_homepage_normal",@"tabbar_icon_hear_normal",@"tabbar_icon_find_normal",@"tabbar_icon_my_normal"] imagesSeleted:@[@"tabbar_icon_homepage_pressed",@"tabbar_icon_hear_pressed",@"tabbar_icon_find_pressed",@"tabbar_icon_my_pressed"] inBundle:ZFMBundleMainFramework];
     
 }
 
