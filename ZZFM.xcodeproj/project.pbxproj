@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABA5F83CF2F1E1E26A300E05 /* libPods-ZZFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1D3222FDDDE0C7A14EA1A1 /* libPods-ZZFM.a */; };
 		B1387A44210027A100961510 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387A43210027A100961510 /* AppDelegate.m */; };
 		B1387A4A210027A100961510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1387A48210027A100961510 /* Main.storyboard */; };
 		B1387A4C210027A200961510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1387A4B210027A200961510 /* Assets.xcassets */; };
@@ -29,6 +30,19 @@
 		B1387AE5210036C000961510 /* ZFMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387ADD210036C000961510 /* ZFMHomeViewController.m */; };
 		B1387AE6210036C000961510 /* ZFMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387ADF210036C000961510 /* ZFMMineViewController.m */; };
 		B1387AE7210036C000961510 /* ZFMDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1387AE3210036C000961510 /* ZFMDiscoverViewController.m */; };
+		B1615E002106FC4800354A56 /* UIView+ZZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DE02106FC4800354A56 /* UIView+ZZFrame.m */; };
+		B1615E012106FC4800354A56 /* NSData+ZZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DE52106FC4800354A56 /* NSData+ZZHash.m */; };
+		B1615E022106FC4800354A56 /* NSDictionary+ZZGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DE72106FC4800354A56 /* NSDictionary+ZZGuard.m */; };
+		B1615E032106FC4800354A56 /* NSArray+ZZGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DEA2106FC4800354A56 /* NSArray+ZZGuard.m */; };
+		B1615E042106FC4800354A56 /* NSString+ZZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DEE2106FC4800354A56 /* NSString+ZZHash.m */; };
+		B1615E052106FC4800354A56 /* NSString+ZZDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DF02106FC4800354A56 /* NSString+ZZDate.m */; };
+		B1615E062106FC4800354A56 /* NSString+ZZHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DF12106FC4800354A56 /* NSString+ZZHeight.m */; };
+		B1615E072106FC4800354A56 /* NSString+ZZURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DF32106FC4800354A56 /* NSString+ZZURL.m */; };
+		B1615E082106FC4800354A56 /* NSObject+ZZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DF72106FC4800354A56 /* NSObject+ZZIP.m */; };
+		B1615E092106FC4800354A56 /* NSObject+USerDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DF92106FC4800354A56 /* NSObject+USerDefault.m */; };
+		B1615E0A2106FC4800354A56 /* NSObject+ZZAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DFA2106FC4800354A56 /* NSObject+ZZAlert.m */; };
+		B1615E0B2106FC4800354A56 /* NSObject+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DFC2106FC4800354A56 /* NSObject+UIViewController.m */; };
+		B1615E0C2106FC4800354A56 /* NSDate+ZZString.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DFE2106FC4800354A56 /* NSDate+ZZString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		135BDA4CC371D3563230B07B /* Pods-ZZFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM.debug.xcconfig"; sourceTree = "<group>"; };
+		6F1D3222FDDDE0C7A14EA1A1 /* libPods-ZZFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D240EB735918EABF1D8CC10 /* Pods-ZZFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM.release.xcconfig"; sourceTree = "<group>"; };
 		B1387A3F210027A100961510 /* ZZFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1387A42210027A100961510 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1387A43210027A100961510 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +109,32 @@
 		B1387AE0210036C000961510 /* ZFMMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMMineViewController.h; sourceTree = "<group>"; };
 		B1387AE2210036C000961510 /* ZFMDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMDiscoverViewController.h; sourceTree = "<group>"; };
 		B1387AE3210036C000961510 /* ZFMDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMDiscoverViewController.m; sourceTree = "<group>"; };
+		B1615DE02106FC4800354A56 /* UIView+ZZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZZFrame.m"; sourceTree = "<group>"; };
+		B1615DE12106FC4800354A56 /* UIView+ZZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZZFrame.h"; sourceTree = "<group>"; };
+		B1615DE42106FC4800354A56 /* NSData+ZZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ZZHash.h"; sourceTree = "<group>"; };
+		B1615DE52106FC4800354A56 /* NSData+ZZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZZHash.m"; sourceTree = "<group>"; };
+		B1615DE72106FC4800354A56 /* NSDictionary+ZZGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZZGuard.m"; sourceTree = "<group>"; };
+		B1615DE82106FC4800354A56 /* NSArray+ZZGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZZGuard.h"; sourceTree = "<group>"; };
+		B1615DE92106FC4800354A56 /* NSDictionary+ZZGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZZGuard.h"; sourceTree = "<group>"; };
+		B1615DEA2106FC4800354A56 /* NSArray+ZZGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZZGuard.m"; sourceTree = "<group>"; };
+		B1615DEC2106FC4800354A56 /* NSString+ZZDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZZDate.h"; sourceTree = "<group>"; };
+		B1615DED2106FC4800354A56 /* NSString+ZZURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZZURL.h"; sourceTree = "<group>"; };
+		B1615DEE2106FC4800354A56 /* NSString+ZZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZZHash.m"; sourceTree = "<group>"; };
+		B1615DEF2106FC4800354A56 /* NSString+ZZHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZZHeight.h"; sourceTree = "<group>"; };
+		B1615DF02106FC4800354A56 /* NSString+ZZDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZZDate.m"; sourceTree = "<group>"; };
+		B1615DF12106FC4800354A56 /* NSString+ZZHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZZHeight.m"; sourceTree = "<group>"; };
+		B1615DF22106FC4800354A56 /* NSString+ZZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZZHash.h"; sourceTree = "<group>"; };
+		B1615DF32106FC4800354A56 /* NSString+ZZURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZZURL.m"; sourceTree = "<group>"; };
+		B1615DF52106FC4800354A56 /* NSObject+USerDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+USerDefault.h"; sourceTree = "<group>"; };
+		B1615DF62106FC4800354A56 /* NSObject+UIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UIViewController.h"; sourceTree = "<group>"; };
+		B1615DF72106FC4800354A56 /* NSObject+ZZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZZIP.m"; sourceTree = "<group>"; };
+		B1615DF82106FC4800354A56 /* NSObject+ZZAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZZAlert.h"; sourceTree = "<group>"; };
+		B1615DF92106FC4800354A56 /* NSObject+USerDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+USerDefault.m"; sourceTree = "<group>"; };
+		B1615DFA2106FC4800354A56 /* NSObject+ZZAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZZAlert.m"; sourceTree = "<group>"; };
+		B1615DFB2106FC4800354A56 /* NSObject+ZZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZZIP.h"; sourceTree = "<group>"; };
+		B1615DFC2106FC4800354A56 /* NSObject+UIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UIViewController.m"; sourceTree = "<group>"; };
+		B1615DFE2106FC4800354A56 /* NSDate+ZZString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZZString.m"; sourceTree = "<group>"; };
+		B1615DFF2106FC4800354A56 /* NSDate+ZZString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZZString.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA5F83CF2F1E1E26A300E05 /* libPods-ZZFM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +163,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F8C9902C7F1421702648605 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				135BDA4CC371D3563230B07B /* Pods-ZZFM.debug.xcconfig */,
+				8D240EB735918EABF1D8CC10 /* Pods-ZZFM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B1387A36210027A100961510 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +179,8 @@
 				B1387A5A210027A200961510 /* ZZFMTests */,
 				B1387A65210027A200961510 /* ZZFMUITests */,
 				B1387A40210027A100961510 /* Products */,
+				8F8C9902C7F1421702648605 /* Pods */,
+				E9A0FBBDD9EAB5714D0572A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +285,7 @@
 		B1387AC32100315B00961510 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				B1615DDD2106FC4800354A56 /* ZZHandyCategory */,
 				B1387AC42100315B00961510 /* Tools */,
 				B1387AC62100315B00961510 /* Libs */,
 				B1387AC72100315B00961510 /* Configs */,
@@ -296,6 +352,111 @@
 			path = Discover;
 			sourceTree = "<group>";
 		};
+		B1615DDD2106FC4800354A56 /* ZZHandyCategory */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DDE2106FC4800354A56 /* UIKit */,
+				B1615DE22106FC4800354A56 /* Foundation */,
+			);
+			path = ZZHandyCategory;
+			sourceTree = "<group>";
+		};
+		B1615DDE2106FC4800354A56 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DDF2106FC4800354A56 /* UIView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B1615DDF2106FC4800354A56 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DE02106FC4800354A56 /* UIView+ZZFrame.m */,
+				B1615DE12106FC4800354A56 /* UIView+ZZFrame.h */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B1615DE22106FC4800354A56 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DE32106FC4800354A56 /* NSData */,
+				B1615DE62106FC4800354A56 /* Container */,
+				B1615DEB2106FC4800354A56 /* NSString */,
+				B1615DF42106FC4800354A56 /* NSObject */,
+				B1615DFD2106FC4800354A56 /* NSDate */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B1615DE32106FC4800354A56 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DE42106FC4800354A56 /* NSData+ZZHash.h */,
+				B1615DE52106FC4800354A56 /* NSData+ZZHash.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		B1615DE62106FC4800354A56 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DE72106FC4800354A56 /* NSDictionary+ZZGuard.m */,
+				B1615DE82106FC4800354A56 /* NSArray+ZZGuard.h */,
+				B1615DE92106FC4800354A56 /* NSDictionary+ZZGuard.h */,
+				B1615DEA2106FC4800354A56 /* NSArray+ZZGuard.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		B1615DEB2106FC4800354A56 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DEC2106FC4800354A56 /* NSString+ZZDate.h */,
+				B1615DED2106FC4800354A56 /* NSString+ZZURL.h */,
+				B1615DEE2106FC4800354A56 /* NSString+ZZHash.m */,
+				B1615DEF2106FC4800354A56 /* NSString+ZZHeight.h */,
+				B1615DF02106FC4800354A56 /* NSString+ZZDate.m */,
+				B1615DF12106FC4800354A56 /* NSString+ZZHeight.m */,
+				B1615DF22106FC4800354A56 /* NSString+ZZHash.h */,
+				B1615DF32106FC4800354A56 /* NSString+ZZURL.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		B1615DF42106FC4800354A56 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DF52106FC4800354A56 /* NSObject+USerDefault.h */,
+				B1615DF62106FC4800354A56 /* NSObject+UIViewController.h */,
+				B1615DF72106FC4800354A56 /* NSObject+ZZIP.m */,
+				B1615DF82106FC4800354A56 /* NSObject+ZZAlert.h */,
+				B1615DF92106FC4800354A56 /* NSObject+USerDefault.m */,
+				B1615DFA2106FC4800354A56 /* NSObject+ZZAlert.m */,
+				B1615DFB2106FC4800354A56 /* NSObject+ZZIP.h */,
+				B1615DFC2106FC4800354A56 /* NSObject+UIViewController.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		B1615DFD2106FC4800354A56 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				B1615DFE2106FC4800354A56 /* NSDate+ZZString.m */,
+				B1615DFF2106FC4800354A56 /* NSDate+ZZString.h */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		E9A0FBBDD9EAB5714D0572A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F1D3222FDDDE0C7A14EA1A1 /* libPods-ZZFM.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,9 +464,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1387A6B210027A200961510 /* Build configuration list for PBXNativeTarget "ZZFM" */;
 			buildPhases = (
+				AA1E3B748D9BCD855FD417B9 /* [CP] Check Pods Manifest.lock */,
 				B1387A3B210027A100961510 /* Sources */,
 				B1387A3C210027A100961510 /* Frameworks */,
 				B1387A3D210027A100961510 /* Resources */,
+				397436D4755796C7AB7F3126 /* [CP] Embed Pods Frameworks */,
+				DD1E1606C8259FE94EEC2926 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -422,6 +586,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		397436D4755796C7AB7F3126 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1E3B748D9BCD855FD417B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZZFM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1E1606C8259FE94EEC2926 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1387A3B210027A100961510 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -429,20 +644,33 @@
 			files = (
 				B1387ABC2100301400961510 /* MainFrameworkAPI.m in Sources */,
 				B1387AA22100299500961510 /* AppServiceModel.m in Sources */,
+				B1615E032106FC4800354A56 /* NSArray+ZZGuard.m in Sources */,
+				B1615E052106FC4800354A56 /* NSString+ZZDate.m in Sources */,
 				B1387AC22100301400961510 /* UITabBar+badge.m in Sources */,
+				B1615E072106FC4800354A56 /* NSString+ZZURL.m in Sources */,
 				B1387A52210027A200961510 /* main.m in Sources */,
+				B1615E022106FC4800354A56 /* NSDictionary+ZZGuard.m in Sources */,
+				B1615E092106FC4800354A56 /* NSObject+USerDefault.m in Sources */,
+				B1615E042106FC4800354A56 /* NSString+ZZHash.m in Sources */,
+				B1615E0B2106FC4800354A56 /* NSObject+UIViewController.m in Sources */,
 				B1387AC12100301400961510 /* NXNavigationController.m in Sources */,
 				B1387AD72100356500961510 /* ZFMConsts.m in Sources */,
 				B1387ABB2100301400961510 /* NavigationConfig.m in Sources */,
 				B1387AE6210036C000961510 /* ZFMMineViewController.m in Sources */,
+				B1615E012106FC4800354A56 /* NSData+ZZHash.m in Sources */,
 				B1387A44210027A100961510 /* AppDelegate.m in Sources */,
+				B1615E0C2106FC4800354A56 /* NSDate+ZZString.m in Sources */,
 				B1387ABA2100301400961510 /* NXTabBarController.m in Sources */,
 				B1387AC02100301400961510 /* NavigationView.m in Sources */,
 				B1387ABD2100301400961510 /* NXTabBar.m in Sources */,
 				B1387AE7210036C000961510 /* ZFMDiscoverViewController.m in Sources */,
+				B1615E062106FC4800354A56 /* NSString+ZZHeight.m in Sources */,
 				B1387AE5210036C000961510 /* ZFMHomeViewController.m in Sources */,
+				B1615E002106FC4800354A56 /* UIView+ZZFrame.m in Sources */,
 				B1387ABE2100301400961510 /* NXTabBarConfig.m in Sources */,
+				B1615E0A2106FC4800354A56 /* NSObject+ZZAlert.m in Sources */,
 				B1387AE4210036C000961510 /* ZFMListenViewController.m in Sources */,
+				B1615E082106FC4800354A56 /* NSObject+ZZIP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +837,7 @@
 		};
 		B1387A6C210027A200961510 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135BDA4CC371D3563230B07B /* Pods-ZZFM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -627,6 +856,7 @@
 		};
 		B1387A6D210027A200961510 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D240EB735918EABF1D8CC10 /* Pods-ZZFM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
