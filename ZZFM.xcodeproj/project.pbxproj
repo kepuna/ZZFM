@@ -262,21 +262,21 @@
 		B1387AA72100301400961510 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B1387AB22100301400961510 /* NXTabBarController.h */,
 				B1387AA82100301400961510 /* NXTabBarController.m */,
-				B1387AA92100301400961510 /* NavigationConfig.m */,
-				B1387AAA2100301400961510 /* NavigationView.h */,
 				B1387AAC2100301400961510 /* NXTabBarConfig.h */,
+				B1387AB32100301400961510 /* NXTabBarConfig.m */,
+				B1387AB72100301400961510 /* MainFrameworkAPI.h */,
 				B1387AAD2100301400961510 /* MainFrameworkAPI.m */,
 				B1387AAE2100301400961510 /* NXNavigationController.h */,
-				B1387AAF2100301400961510 /* UITabBar+badge.h */,
-				B1387AB02100301400961510 /* NXTabBar.m */,
-				B1387AB12100301400961510 /* NavigationConfig.h */,
-				B1387AB22100301400961510 /* NXTabBarController.h */,
-				B1387AB32100301400961510 /* NXTabBarConfig.m */,
-				B1387AB52100301400961510 /* NavigationView.m */,
 				B1387AB62100301400961510 /* NXNavigationController.m */,
-				B1387AB72100301400961510 /* MainFrameworkAPI.h */,
+				B1387AB12100301400961510 /* NavigationConfig.h */,
+				B1387AA92100301400961510 /* NavigationConfig.m */,
+				B1387AAA2100301400961510 /* NavigationView.h */,
+				B1387AB52100301400961510 /* NavigationView.m */,
 				B1387AB82100301400961510 /* NXTabBar.h */,
+				B1387AB02100301400961510 /* NXTabBar.m */,
+				B1387AAF2100301400961510 /* UITabBar+badge.h */,
 				B1387AB92100301400961510 /* UITabBar+badge.m */,
 			);
 			path = Classes;
