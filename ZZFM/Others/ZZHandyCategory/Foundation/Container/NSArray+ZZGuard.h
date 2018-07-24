@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  插入对象
- 当插入的对象为nil时直接返回 （Release模式下）
+ 当插入的对象为nil时直接返回 
  @param anObject 元素
  */
 - (void)zz_addObject:(id)anObject;

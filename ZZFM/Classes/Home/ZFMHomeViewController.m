@@ -7,8 +7,12 @@
 //  
 
 #import "ZFMHomeViewController.h"
+#import "ZFMHomeAPIManager.h"
 
-@interface ZFMHomeViewController ()
+@interface ZFMHomeViewController () <CTAPIManagerCallBackDelegate>
+
+@property (nonatomic, strong) UIButton *startRequestButton;
+@property (nonatomic, strong) ZFMHomeAPIManager *homeAPIManager;
 
 @end
 
@@ -16,22 +20,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    self.startRequestButton.center = self.view.center;
+    [self.startRequestButton sizeToFit];
+    [self.view addSubview:self.startRequestButton];
+}
+
+
+- (void)didTappedStartButton:(UIButton *)sender {
+    [self.homeAPIManager loadData];
+}
+
+#pragma mark - CTAPIManagerCallBackDelegate
+- (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager
+{
+    NSLog(@"SSS%@", [manager fetchDataWithReformer:nil]);
+}
+
+- (void)managerCallAPIDidFailed:(CTAPIBaseManager *)manager
+{
+    NSLog(@"EEEE%@", [manager fetchDataWithReformer:nil]);
+}
+
+#pragma mark - Getters & Setters
+- (ZFMHomeAPIManager *)homeAPIManager
+{
+    if (_homeAPIManager == nil) {
+        _homeAPIManager = [[ZFMHomeAPIManager alloc] init];
+        _homeAPIManager.delegate = self;
+    }
+    return _homeAPIManager;
+}
+
+- (UIButton *)startRequestButton {
+    if (_startRequestButton == nil) {
+        _startRequestButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_startRequestButton setTitle:@"send request" forState:UIControlStateNormal];
+        [_startRequestButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_startRequestButton addTarget:self action:@selector(didTappedStartButton:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _startRequestButton;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
