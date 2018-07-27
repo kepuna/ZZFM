@@ -11,55 +11,33 @@
 @implementation NSArray (ZZGuard)
 
 - (id)zz_objectOrNilAtIndex:(NSUInteger)index {
-#ifdef DEBUG
-    return self[index];
-#else
     return index < self.count ? self[index] : nil;
-#endif
 }
 
 @end
 
-
 @implementation NSMutableArray (ZZGuard)
 
 - (void)zz_addObject:(id)anObject {
-    
-#ifdef DEBUG
-    [self addObject:anObject];
-#else
     if (!anObject) { return;}
     [self addObject:anObject];
-#endif
 }
 
 - (void)zz_addObjects:(NSArray *)objects {
-#ifdef DEBUG
-    [self addObjectsFromArray:objects];
-#else
     if (!objects) { return;}
     [self addObjectsFromArray:objects];
-#endif
 }
 
 - (void)zz_removeFirstObject {
-#ifdef DEBUG
-    [self removeObjectAtIndex:0];
-#else
     if (self.count) {
         [self removeObjectAtIndex:0];
     }
-#endif
 }
 
 - (void)zz_removeLastObject {
-#ifdef DEBUG
-    [self removeObjectAtIndex:self.count - 1];
-#else
     if (self.count) {
         [self removeObjectAtIndex:self.count - 1];
     }
-#endif
 }
 
 - (id)zz_popFirstObject {
@@ -81,13 +59,9 @@
 }
 
 - (void)zz_prependObject:(id)anObject {
-#ifdef DEBUG
-    [self insertObject:anObject atIndex:0];
-#else
     if (anObject) {
         [self insertObject:anObject atIndex:0];
     }
-#endif
 }
 
 - (void)zz_prependObjects:(NSArray *)objects {
@@ -99,13 +73,9 @@
 }
 
 - (void)zz_insertObject:(id)anObject atIndex:(NSUInteger)index {
-#ifdef DEBUG
-   [self insertObject:anObject atIndex:index];
-#else
     if (anObject) {
         [self insertObject:anObject atIndex:index];
     }
-#endif
 }
 
 - (void)zz_insertObjects:(NSArray *)objects atIndex:(NSUInteger)index {

@@ -43,6 +43,11 @@
 		B1615E0A2106FC4800354A56 /* NSObject+ZZAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DFA2106FC4800354A56 /* NSObject+ZZAlert.m */; };
 		B1615E0B2106FC4800354A56 /* NSObject+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DFC2106FC4800354A56 /* NSObject+UIViewController.m */; };
 		B1615E0C2106FC4800354A56 /* NSDate+ZZString.m in Sources */ = {isa = PBXBuildFile; fileRef = B1615DFE2106FC4800354A56 /* NSDate+ZZString.m */; };
+		B164F74B21071F270012B953 /* ZFMHomeAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B164F74A21071F270012B953 /* ZFMHomeAPIManager.m */; };
+		B164F75A210739C90012B953 /* ZFMHotGuessAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B164F759210739C90012B953 /* ZFMHotGuessAPIManager.m */; };
+		B164F76421073B7C0012B953 /* Target_CTAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B164F76121073B7C0012B953 /* Target_CTAppContext.m */; };
+		B164F76721073BCE0012B953 /* Target_ZFMRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = B164F76621073BCE0012B953 /* Target_ZFMRequestService.m */; };
+		B164F76A21073BEA0012B953 /* ZFMRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = B164F76921073BEA0012B953 /* ZFMRequestService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +153,16 @@
 		B1615DFC2106FC4800354A56 /* NSObject+UIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UIViewController.m"; sourceTree = "<group>"; };
 		B1615DFE2106FC4800354A56 /* NSDate+ZZString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZZString.m"; sourceTree = "<group>"; };
 		B1615DFF2106FC4800354A56 /* NSDate+ZZString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZZString.h"; sourceTree = "<group>"; };
+		B164F74921071F270012B953 /* ZFMHomeAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMHomeAPIManager.h; sourceTree = "<group>"; };
+		B164F74A21071F270012B953 /* ZFMHomeAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMHomeAPIManager.m; sourceTree = "<group>"; };
+		B164F758210739C90012B953 /* ZFMHotGuessAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMHotGuessAPIManager.h; sourceTree = "<group>"; };
+		B164F759210739C90012B953 /* ZFMHotGuessAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMHotGuessAPIManager.m; sourceTree = "<group>"; };
+		B164F76021073B7C0012B953 /* Target_CTAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_CTAppContext.h; sourceTree = "<group>"; };
+		B164F76121073B7C0012B953 /* Target_CTAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_CTAppContext.m; sourceTree = "<group>"; };
+		B164F76521073BCE0012B953 /* Target_ZFMRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ZFMRequestService.h; sourceTree = "<group>"; };
+		B164F76621073BCE0012B953 /* Target_ZFMRequestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ZFMRequestService.m; sourceTree = "<group>"; };
+		B164F76821073BEA0012B953 /* ZFMRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMRequestService.h; sourceTree = "<group>"; };
+		B164F76921073BEA0012B953 /* ZFMRequestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMRequestService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +326,7 @@
 		B1387AC42100315B00961510 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B164F75B21073B080012B953 /* HttpRequest */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -343,6 +359,10 @@
 			children = (
 				B1387ADC210036C000961510 /* ZFMHomeViewController.h */,
 				B1387ADD210036C000961510 /* ZFMHomeViewController.m */,
+				B164F74921071F270012B953 /* ZFMHomeAPIManager.h */,
+				B164F74A21071F270012B953 /* ZFMHomeAPIManager.m */,
+				B164F758210739C90012B953 /* ZFMHotGuessAPIManager.h */,
+				B164F759210739C90012B953 /* ZFMHotGuessAPIManager.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -462,6 +482,19 @@
 			path = NSDate;
 			sourceTree = "<group>";
 		};
+		B164F75B21073B080012B953 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B164F76021073B7C0012B953 /* Target_CTAppContext.h */,
+				B164F76121073B7C0012B953 /* Target_CTAppContext.m */,
+				B164F76521073BCE0012B953 /* Target_ZFMRequestService.h */,
+				B164F76621073BCE0012B953 /* Target_ZFMRequestService.m */,
+				B164F76821073BEA0012B953 /* ZFMRequestService.h */,
+				B164F76921073BEA0012B953 /* ZFMRequestService.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
 		E9A0FBBDD9EAB5714D0572A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +569,7 @@
 		B1387A37210027A100961510 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZFM;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = donews;
 				TargetAttributes = {
@@ -662,6 +696,7 @@
 				B1615E052106FC4800354A56 /* NSString+ZZDate.m in Sources */,
 				B1387AC22100301400961510 /* UITabBar+badge.m in Sources */,
 				B1615E072106FC4800354A56 /* NSString+ZZURL.m in Sources */,
+				B164F75A210739C90012B953 /* ZFMHotGuessAPIManager.m in Sources */,
 				B1387A52210027A200961510 /* main.m in Sources */,
 				B1615E022106FC4800354A56 /* NSDictionary+ZZGuard.m in Sources */,
 				B1615E092106FC4800354A56 /* NSObject+USerDefault.m in Sources */,
@@ -678,11 +713,15 @@
 				B1387AC02100301400961510 /* NavigationView.m in Sources */,
 				B1387ABD2100301400961510 /* NXTabBar.m in Sources */,
 				B1387AE7210036C000961510 /* ZFMDiscoverViewController.m in Sources */,
+				B164F76721073BCE0012B953 /* Target_ZFMRequestService.m in Sources */,
+				B164F76A21073BEA0012B953 /* ZFMRequestService.m in Sources */,
 				B1615E062106FC4800354A56 /* NSString+ZZHeight.m in Sources */,
 				B1387AE5210036C000961510 /* ZFMHomeViewController.m in Sources */,
 				B1615E002106FC4800354A56 /* UIView+ZZFrame.m in Sources */,
 				B1387ABE2100301400961510 /* NXTabBarConfig.m in Sources */,
 				B1615E0A2106FC4800354A56 /* NSObject+ZZAlert.m in Sources */,
+				B164F76421073B7C0012B953 /* Target_CTAppContext.m in Sources */,
+				B164F74B21071F270012B953 /* ZFMHomeAPIManager.m in Sources */,
 				B1387AE4210036C000961510 /* ZFMListenViewController.m in Sources */,
 				B1615E082106FC4800354A56 /* NSObject+ZZIP.m in Sources */,
 			);
