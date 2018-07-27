@@ -62,6 +62,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0566085C21070ED1005C0D18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		135BDA4CC371D3563230B07B /* Pods-ZZFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM.debug.xcconfig"; sourceTree = "<group>"; };
 		6F1D3222FDDDE0C7A14EA1A1 /* libPods-ZZFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -372,8 +385,8 @@
 		B1615DDF2106FC4800354A56 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				B1615DE02106FC4800354A56 /* UIView+ZZFrame.m */,
 				B1615DE12106FC4800354A56 /* UIView+ZZFrame.h */,
+				B1615DE02106FC4800354A56 /* UIView+ZZFrame.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -402,9 +415,9 @@
 		B1615DE62106FC4800354A56 /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				B1615DE92106FC4800354A56 /* NSDictionary+ZZGuard.h */,
 				B1615DE72106FC4800354A56 /* NSDictionary+ZZGuard.m */,
 				B1615DE82106FC4800354A56 /* NSArray+ZZGuard.h */,
-				B1615DE92106FC4800354A56 /* NSDictionary+ZZGuard.h */,
 				B1615DEA2106FC4800354A56 /* NSArray+ZZGuard.m */,
 			);
 			path = Container;
@@ -414,13 +427,13 @@
 			isa = PBXGroup;
 			children = (
 				B1615DEC2106FC4800354A56 /* NSString+ZZDate.h */,
+				B1615DF02106FC4800354A56 /* NSString+ZZDate.m */,
 				B1615DED2106FC4800354A56 /* NSString+ZZURL.h */,
+				B1615DF32106FC4800354A56 /* NSString+ZZURL.m */,
+				B1615DF22106FC4800354A56 /* NSString+ZZHash.h */,
 				B1615DEE2106FC4800354A56 /* NSString+ZZHash.m */,
 				B1615DEF2106FC4800354A56 /* NSString+ZZHeight.h */,
-				B1615DF02106FC4800354A56 /* NSString+ZZDate.m */,
 				B1615DF12106FC4800354A56 /* NSString+ZZHeight.m */,
-				B1615DF22106FC4800354A56 /* NSString+ZZHash.h */,
-				B1615DF32106FC4800354A56 /* NSString+ZZURL.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -429,12 +442,12 @@
 			isa = PBXGroup;
 			children = (
 				B1615DF52106FC4800354A56 /* NSObject+USerDefault.h */,
-				B1615DF62106FC4800354A56 /* NSObject+UIViewController.h */,
+				B1615DF92106FC4800354A56 /* NSObject+USerDefault.m */,
+				B1615DFB2106FC4800354A56 /* NSObject+ZZIP.h */,
 				B1615DF72106FC4800354A56 /* NSObject+ZZIP.m */,
 				B1615DF82106FC4800354A56 /* NSObject+ZZAlert.h */,
-				B1615DF92106FC4800354A56 /* NSObject+USerDefault.m */,
 				B1615DFA2106FC4800354A56 /* NSObject+ZZAlert.m */,
-				B1615DFB2106FC4800354A56 /* NSObject+ZZIP.h */,
+				B1615DF62106FC4800354A56 /* NSObject+UIViewController.h */,
 				B1615DFC2106FC4800354A56 /* NSObject+UIViewController.m */,
 			);
 			path = NSObject;
@@ -443,8 +456,8 @@
 		B1615DFD2106FC4800354A56 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				B1615DFE2106FC4800354A56 /* NSDate+ZZString.m */,
 				B1615DFF2106FC4800354A56 /* NSDate+ZZString.h */,
+				B1615DFE2106FC4800354A56 /* NSDate+ZZString.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -470,6 +483,7 @@
 				B1387A3D210027A100961510 /* Resources */,
 				397436D4755796C7AB7F3126 /* [CP] Embed Pods Frameworks */,
 				DD1E1606C8259FE94EEC2926 /* [CP] Copy Pods Resources */,
+				0566085C21070ED1005C0D18 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -841,7 +855,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2HHW7J2HF4;
 				INFOPLIST_FILE = ZZFM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -860,7 +874,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2HHW7J2HF4;
 				INFOPLIST_FILE = ZZFM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
