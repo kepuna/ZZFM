@@ -48,6 +48,34 @@
 		B164F76421073B7C0012B953 /* Target_CTAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B164F76121073B7C0012B953 /* Target_CTAppContext.m */; };
 		B164F76721073BCE0012B953 /* Target_ZFMRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = B164F76621073BCE0012B953 /* Target_ZFMRequestService.m */; };
 		B164F76A21073BEA0012B953 /* ZFMRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = B164F76921073BEA0012B953 /* ZFMRequestService.m */; };
+		B19F73E02122CAC00083A269 /* ZFMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73DF2122CAC00083A269 /* ZFMHomeViewModel.m */; };
+		B19F73E92122D6D00083A269 /* ZFMRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73E82122D6D00083A269 /* ZFMRecommendViewController.m */; };
+		B19F73EC2122D6F90083A269 /* ZFMCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73EB2122D6F90083A269 /* ZFMCategoryViewController.m */; };
+		B19F73EF2122D8B20083A269 /* ZFMHomeChildFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73EE2122D8B20083A269 /* ZFMHomeChildFactory.m */; };
+		B19F74222122F3190083A269 /* DDCollectionViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73F22122F3180083A269 /* DDCollectionViewComponent.m */; };
+		B19F74232122F3190083A269 /* DDCollectionViewSectionGroupComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B19F73F62122F3180083A269 /* DDCollectionViewSectionGroupComponent.mm */; };
+		B19F74242122F3190083A269 /* DDCollectionViewItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73FA2122F3180083A269 /* DDCollectionViewItemComponent.m */; };
+		B19F74252122F3190083A269 /* DDCollectionViewSectionComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B19F73FC2122F3180083A269 /* DDCollectionViewSectionComponent.mm */; };
+		B19F74262122F3190083A269 /* DDCollectionViewStatusComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73FE2122F3180083A269 /* DDCollectionViewStatusComponent.m */; };
+		B19F74272122F3190083A269 /* DDTableViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74002122F3180083A269 /* DDTableViewComponent.m */; };
+		B19F74282122F3190083A269 /* DDTableViewSectionGroupComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74022122F3180083A269 /* DDTableViewSectionGroupComponent.m */; };
+		B19F74292122F3190083A269 /* DDTableViewSectionComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74032122F3180083A269 /* DDTableViewSectionComponent.m */; };
+		B19F742A2122F3190083A269 /* DDTableViewItemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74042122F3180083A269 /* DDTableViewItemComponent.m */; };
+		B19F742B2122F3190083A269 /* UIView+JAExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F740B2122F3180083A269 /* UIView+JAExt.m */; };
+		B19F742C2122F3190083A269 /* DNChannelScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F740D2122F3180083A269 /* DNChannelScrollView.m */; };
+		B19F742D2122F3190083A269 /* DNContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F740E2122F3180083A269 /* DNContentScrollView.m */; };
+		B19F742E2122F3190083A269 /* UIView+JAExtForPageScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F740F2122F3180083A269 /* UIView+JAExtForPageScroll.m */; };
+		B19F742F2122F3190083A269 /* UIViewController+DNPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74112122F3180083A269 /* UIViewController+DNPageController.m */; };
+		B19F74302122F3190083A269 /* DNPageChannelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74122122F3180083A269 /* DNPageChannelStyle.m */; };
+		B19F74312122F3190083A269 /* DNPageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74132122F3180083A269 /* DNPageCollectionView.m */; };
+		B19F74322122F3190083A269 /* DNChannelTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74142122F3180083A269 /* DNChannelTitleView.m */; };
+		B19F74332122F3190083A269 /* DNPageCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74172122F3180083A269 /* DNPageCollectionViewFlowLayout.m */; };
+		B19F74342122F3190083A269 /* DNPageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F741B2122F3180083A269 /* DNPageCollectionViewCell.m */; };
+		B19F74352122F3190083A269 /* DNPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F741E2122F3180083A269 /* DNPageScrollView.m */; };
+		B19F74392122F3410083A269 /* ZFMColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F74382122F3410083A269 /* ZFMColorManager.m */; };
+		B19F743C2122F34F0083A269 /* ZFMFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F743B2122F34F0083A269 /* ZFMFontManager.m */; };
+		B1CD63EB211D6C09008F90A4 /* ZFMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CD63EA211D6C09008F90A4 /* ZFMTableViewCell.m */; };
+		B1CD63F1211D8F36008F90A4 /* UIView+JAExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CD63EF211D8F36008F90A4 /* UIView+JAExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +178,78 @@
 		B164F76621073BCE0012B953 /* Target_ZFMRequestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ZFMRequestService.m; sourceTree = "<group>"; };
 		B164F76821073BEA0012B953 /* ZFMRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMRequestService.h; sourceTree = "<group>"; };
 		B164F76921073BEA0012B953 /* ZFMRequestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMRequestService.m; sourceTree = "<group>"; };
+		B164F76B210854760012B953 /* libDDComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDDComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B164F76D210854FD0012B953 /* libDDComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDDComponent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B164F76F210856FC0012B953 /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B164F771210857BF0012B953 /* libCTNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCTNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B164F773210857CC0012B953 /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B164F775210857D70012B953 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B164F777210858820012B953 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B164F779210858890012B953 /* libCTMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCTMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19F73DE2122CAC00083A269 /* ZFMHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMHomeViewModel.h; sourceTree = "<group>"; };
+		B19F73DF2122CAC00083A269 /* ZFMHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMHomeViewModel.m; sourceTree = "<group>"; };
+		B19F73E12122CB390083A269 /* ZFMPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPublic.h; sourceTree = "<group>"; };
+		B19F73E22122CB760083A269 /* ZFMMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMMacro.h; sourceTree = "<group>"; };
+		B19F73E72122D6D00083A269 /* ZFMRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMRecommendViewController.h; sourceTree = "<group>"; };
+		B19F73E82122D6D00083A269 /* ZFMRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMRecommendViewController.m; sourceTree = "<group>"; };
+		B19F73EA2122D6F90083A269 /* ZFMCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMCategoryViewController.h; sourceTree = "<group>"; };
+		B19F73EB2122D6F90083A269 /* ZFMCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMCategoryViewController.m; sourceTree = "<group>"; };
+		B19F73ED2122D8B20083A269 /* ZFMHomeChildFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMHomeChildFactory.h; sourceTree = "<group>"; };
+		B19F73EE2122D8B20083A269 /* ZFMHomeChildFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMHomeChildFactory.m; sourceTree = "<group>"; };
+		B19F73F22122F3180083A269 /* DDCollectionViewComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewComponent.m; sourceTree = "<group>"; };
+		B19F73F32122F3180083A269 /* DDCollectionViewSectionGroupComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSectionGroupComponent.h; sourceTree = "<group>"; };
+		B19F73F42122F3180083A269 /* DDCollectionViewItemComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewItemComponent.h; sourceTree = "<group>"; };
+		B19F73F52122F3180083A269 /* DDCollectionViewComponent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDCollectionViewComponent+Private.h"; sourceTree = "<group>"; };
+		B19F73F62122F3180083A269 /* DDCollectionViewSectionGroupComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDCollectionViewSectionGroupComponent.mm; sourceTree = "<group>"; };
+		B19F73F72122F3180083A269 /* DDCollectionViewComponent+Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDCollectionViewComponent+Cache.h"; sourceTree = "<group>"; };
+		B19F73F82122F3180083A269 /* DDCollectionComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCollectionComponent.h; sourceTree = "<group>"; };
+		B19F73F92122F3180083A269 /* DDCollectionViewStatusComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewStatusComponent.h; sourceTree = "<group>"; };
+		B19F73FA2122F3180083A269 /* DDCollectionViewItemComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewItemComponent.m; sourceTree = "<group>"; };
+		B19F73FB2122F3180083A269 /* DDCollectionViewComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewComponent.h; sourceTree = "<group>"; };
+		B19F73FC2122F3180083A269 /* DDCollectionViewSectionComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DDCollectionViewSectionComponent.mm; sourceTree = "<group>"; };
+		B19F73FD2122F3180083A269 /* DDCollectionViewSectionComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSectionComponent.h; sourceTree = "<group>"; };
+		B19F73FE2122F3180083A269 /* DDCollectionViewStatusComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewStatusComponent.m; sourceTree = "<group>"; };
+		B19F74002122F3180083A269 /* DDTableViewComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewComponent.m; sourceTree = "<group>"; };
+		B19F74012122F3180083A269 /* DDTableViewComponent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDTableViewComponent+Private.h"; sourceTree = "<group>"; };
+		B19F74022122F3180083A269 /* DDTableViewSectionGroupComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewSectionGroupComponent.m; sourceTree = "<group>"; };
+		B19F74032122F3180083A269 /* DDTableViewSectionComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewSectionComponent.m; sourceTree = "<group>"; };
+		B19F74042122F3180083A269 /* DDTableViewItemComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewItemComponent.m; sourceTree = "<group>"; };
+		B19F74052122F3180083A269 /* DDTableViewComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewComponent.h; sourceTree = "<group>"; };
+		B19F74062122F3180083A269 /* DDTableViewSectionGroupComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewSectionGroupComponent.h; sourceTree = "<group>"; };
+		B19F74072122F3180083A269 /* DDTableViewItemComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewItemComponent.h; sourceTree = "<group>"; };
+		B19F74082122F3180083A269 /* DDTableViewSectionComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewSectionComponent.h; sourceTree = "<group>"; };
+		B19F74092122F3180083A269 /* DDComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDComponent.h; sourceTree = "<group>"; };
+		B19F740B2122F3180083A269 /* UIView+JAExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JAExt.m"; sourceTree = "<group>"; };
+		B19F740C2122F3180083A269 /* DNPageCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPageCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		B19F740D2122F3180083A269 /* DNChannelScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNChannelScrollView.m; sourceTree = "<group>"; };
+		B19F740E2122F3180083A269 /* DNContentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNContentScrollView.m; sourceTree = "<group>"; };
+		B19F740F2122F3180083A269 /* UIView+JAExtForPageScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JAExtForPageScroll.m"; sourceTree = "<group>"; };
+		B19F74102122F3180083A269 /* DNPageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPageCollectionViewCell.h; sourceTree = "<group>"; };
+		B19F74112122F3180083A269 /* UIViewController+DNPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DNPageController.m"; sourceTree = "<group>"; };
+		B19F74122122F3180083A269 /* DNPageChannelStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPageChannelStyle.m; sourceTree = "<group>"; };
+		B19F74132122F3180083A269 /* DNPageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPageCollectionView.m; sourceTree = "<group>"; };
+		B19F74142122F3180083A269 /* DNChannelTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNChannelTitleView.m; sourceTree = "<group>"; };
+		B19F74152122F3180083A269 /* DNPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPageScrollView.h; sourceTree = "<group>"; };
+		B19F74162122F3180083A269 /* DNPageScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPageScrollViewDelegate.h; sourceTree = "<group>"; };
+		B19F74172122F3180083A269 /* DNPageCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPageCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		B19F74182122F3180083A269 /* UIView+JAExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JAExt.h"; sourceTree = "<group>"; };
+		B19F74192122F3180083A269 /* DNContentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNContentScrollView.h; sourceTree = "<group>"; };
+		B19F741A2122F3180083A269 /* DNChannelScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNChannelScrollView.h; sourceTree = "<group>"; };
+		B19F741B2122F3180083A269 /* DNPageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPageCollectionViewCell.m; sourceTree = "<group>"; };
+		B19F741C2122F3180083A269 /* UIView+JAExtForPageScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JAExtForPageScroll.h"; sourceTree = "<group>"; };
+		B19F741D2122F3180083A269 /* DNChannelTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNChannelTitleView.h; sourceTree = "<group>"; };
+		B19F741E2122F3180083A269 /* DNPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPageScrollView.m; sourceTree = "<group>"; };
+		B19F741F2122F3180083A269 /* DNPageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPageCollectionView.h; sourceTree = "<group>"; };
+		B19F74202122F3180083A269 /* DNPageChannelStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPageChannelStyle.h; sourceTree = "<group>"; };
+		B19F74212122F3180083A269 /* UIViewController+DNPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DNPageController.h"; sourceTree = "<group>"; };
+		B19F74372122F3410083A269 /* ZFMColorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMColorManager.h; sourceTree = "<group>"; };
+		B19F74382122F3410083A269 /* ZFMColorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMColorManager.m; sourceTree = "<group>"; };
+		B19F743A2122F34F0083A269 /* ZFMFontManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMFontManager.h; sourceTree = "<group>"; };
+		B19F743B2122F34F0083A269 /* ZFMFontManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMFontManager.m; sourceTree = "<group>"; };
+		B1CD63E9211D6C08008F90A4 /* ZFMTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMTableViewCell.h; sourceTree = "<group>"; };
+		B1CD63EA211D6C09008F90A4 /* ZFMTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMTableViewCell.m; sourceTree = "<group>"; };
+		B1CD63EF211D8F36008F90A4 /* UIView+JAExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JAExt.m"; sourceTree = "<group>"; };
+		B1CD63F0211D8F36008F90A4 /* UIView+JAExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JAExt.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +406,8 @@
 				B1387AC72100315B00961510 /* Configs */,
 				B1387AD52100356500961510 /* ZFMConsts.h */,
 				B1387AD62100356500961510 /* ZFMConsts.m */,
+				B19F73E22122CB760083A269 /* ZFMMacro.h */,
+				B19F73E12122CB390083A269 /* ZFMPublic.h */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -313,6 +415,7 @@
 		B1387AC42100315B00961510 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B19F74362122F32E0083A269 /* UI */,
 				B164F75B21073B080012B953 /* HttpRequest */,
 			);
 			path = Tools;
@@ -321,6 +424,8 @@
 		B1387AC62100315B00961510 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				B19F73F02122F3180083A269 /* DDComponent */,
+				B19F740A2122F3180083A269 /* DNPageScrollView */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -335,8 +440,12 @@
 		B1387AD8210036C000961510 /* Listen */ = {
 			isa = PBXGroup;
 			children = (
+				B1CD63F0211D8F36008F90A4 /* UIView+JAExt.h */,
+				B1CD63EF211D8F36008F90A4 /* UIView+JAExt.m */,
 				B1387AD9210036C000961510 /* ZFMListenViewController.m */,
 				B1387ADA210036C000961510 /* ZFMListenViewController.h */,
+				B1CD63E9211D6C08008F90A4 /* ZFMTableViewCell.h */,
+				B1CD63EA211D6C09008F90A4 /* ZFMTableViewCell.m */,
 			);
 			path = Listen;
 			sourceTree = "<group>";
@@ -346,10 +455,18 @@
 			children = (
 				B1387ADC210036C000961510 /* ZFMHomeViewController.h */,
 				B1387ADD210036C000961510 /* ZFMHomeViewController.m */,
+				B19F73E72122D6D00083A269 /* ZFMRecommendViewController.h */,
+				B19F73E82122D6D00083A269 /* ZFMRecommendViewController.m */,
+				B19F73EA2122D6F90083A269 /* ZFMCategoryViewController.h */,
+				B19F73EB2122D6F90083A269 /* ZFMCategoryViewController.m */,
 				B164F74921071F270012B953 /* ZFMHomeAPIManager.h */,
 				B164F74A21071F270012B953 /* ZFMHomeAPIManager.m */,
 				B164F758210739C90012B953 /* ZFMHotGuessAPIManager.h */,
 				B164F759210739C90012B953 /* ZFMHotGuessAPIManager.m */,
+				B19F73DE2122CAC00083A269 /* ZFMHomeViewModel.h */,
+				B19F73DF2122CAC00083A269 /* ZFMHomeViewModel.m */,
+				B19F73ED2122D8B20083A269 /* ZFMHomeChildFactory.h */,
+				B19F73EE2122D8B20083A269 /* ZFMHomeChildFactory.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -482,9 +599,104 @@
 			path = HttpRequest;
 			sourceTree = "<group>";
 		};
+		B19F73F02122F3180083A269 /* DDComponent */ = {
+			isa = PBXGroup;
+			children = (
+				B19F73F12122F3180083A269 /* Collection */,
+				B19F73FF2122F3180083A269 /* Table */,
+				B19F74092122F3180083A269 /* DDComponent.h */,
+			);
+			path = DDComponent;
+			sourceTree = "<group>";
+		};
+		B19F73F12122F3180083A269 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				B19F73F22122F3180083A269 /* DDCollectionViewComponent.m */,
+				B19F73F32122F3180083A269 /* DDCollectionViewSectionGroupComponent.h */,
+				B19F73F42122F3180083A269 /* DDCollectionViewItemComponent.h */,
+				B19F73F52122F3180083A269 /* DDCollectionViewComponent+Private.h */,
+				B19F73F62122F3180083A269 /* DDCollectionViewSectionGroupComponent.mm */,
+				B19F73F72122F3180083A269 /* DDCollectionViewComponent+Cache.h */,
+				B19F73F82122F3180083A269 /* DDCollectionComponent.h */,
+				B19F73F92122F3180083A269 /* DDCollectionViewStatusComponent.h */,
+				B19F73FA2122F3180083A269 /* DDCollectionViewItemComponent.m */,
+				B19F73FB2122F3180083A269 /* DDCollectionViewComponent.h */,
+				B19F73FC2122F3180083A269 /* DDCollectionViewSectionComponent.mm */,
+				B19F73FD2122F3180083A269 /* DDCollectionViewSectionComponent.h */,
+				B19F73FE2122F3180083A269 /* DDCollectionViewStatusComponent.m */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		B19F73FF2122F3180083A269 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				B19F74002122F3180083A269 /* DDTableViewComponent.m */,
+				B19F74012122F3180083A269 /* DDTableViewComponent+Private.h */,
+				B19F74022122F3180083A269 /* DDTableViewSectionGroupComponent.m */,
+				B19F74032122F3180083A269 /* DDTableViewSectionComponent.m */,
+				B19F74042122F3180083A269 /* DDTableViewItemComponent.m */,
+				B19F74052122F3180083A269 /* DDTableViewComponent.h */,
+				B19F74062122F3180083A269 /* DDTableViewSectionGroupComponent.h */,
+				B19F74072122F3180083A269 /* DDTableViewItemComponent.h */,
+				B19F74082122F3180083A269 /* DDTableViewSectionComponent.h */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		B19F740A2122F3180083A269 /* DNPageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B19F740B2122F3180083A269 /* UIView+JAExt.m */,
+				B19F740C2122F3180083A269 /* DNPageCollectionViewFlowLayout.h */,
+				B19F740D2122F3180083A269 /* DNChannelScrollView.m */,
+				B19F740E2122F3180083A269 /* DNContentScrollView.m */,
+				B19F740F2122F3180083A269 /* UIView+JAExtForPageScroll.m */,
+				B19F74102122F3180083A269 /* DNPageCollectionViewCell.h */,
+				B19F74112122F3180083A269 /* UIViewController+DNPageController.m */,
+				B19F74122122F3180083A269 /* DNPageChannelStyle.m */,
+				B19F74132122F3180083A269 /* DNPageCollectionView.m */,
+				B19F74142122F3180083A269 /* DNChannelTitleView.m */,
+				B19F74152122F3180083A269 /* DNPageScrollView.h */,
+				B19F74162122F3180083A269 /* DNPageScrollViewDelegate.h */,
+				B19F74172122F3180083A269 /* DNPageCollectionViewFlowLayout.m */,
+				B19F74182122F3180083A269 /* UIView+JAExt.h */,
+				B19F74192122F3180083A269 /* DNContentScrollView.h */,
+				B19F741A2122F3180083A269 /* DNChannelScrollView.h */,
+				B19F741B2122F3180083A269 /* DNPageCollectionViewCell.m */,
+				B19F741C2122F3180083A269 /* UIView+JAExtForPageScroll.h */,
+				B19F741D2122F3180083A269 /* DNChannelTitleView.h */,
+				B19F741E2122F3180083A269 /* DNPageScrollView.m */,
+				B19F741F2122F3180083A269 /* DNPageCollectionView.h */,
+				B19F74202122F3180083A269 /* DNPageChannelStyle.h */,
+				B19F74212122F3180083A269 /* UIViewController+DNPageController.h */,
+			);
+			path = DNPageScrollView;
+			sourceTree = "<group>";
+		};
+		B19F74362122F32E0083A269 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B19F74372122F3410083A269 /* ZFMColorManager.h */,
+				B19F74382122F3410083A269 /* ZFMColorManager.m */,
+				B19F743A2122F34F0083A269 /* ZFMFontManager.h */,
+				B19F743B2122F34F0083A269 /* ZFMFontManager.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		E9A0FBBDD9EAB5714D0572A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B164F779210858890012B953 /* libCTMediator.a */,
+				B164F777210858820012B953 /* libAFNetworking.a */,
+				B164F775210857D70012B953 /* libSDWebImage.a */,
+				B164F773210857CC0012B953 /* libReactiveCocoa.a */,
+				B164F771210857BF0012B953 /* libCTNetworking.a */,
+				B164F76F210856FC0012B953 /* libReactiveCocoa.a */,
+				B164F76D210854FD0012B953 /* libDDComponent.a */,
+				B164F76B210854760012B953 /* libDDComponent.a */,
 				6F1D3222FDDDE0C7A14EA1A1 /* libPods-ZZFM.a */,
 			);
 			name = Frameworks;
@@ -676,37 +888,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19F74392122F3410083A269 /* ZFMColorManager.m in Sources */,
 				B1387ABC2100301400961510 /* MainFrameworkAPI.m in Sources */,
 				B1387AA22100299500961510 /* AppServiceModel.m in Sources */,
 				B1615E032106FC4800354A56 /* NSArray+ZZGuard.m in Sources */,
+				B19F742B2122F3190083A269 /* UIView+JAExt.m in Sources */,
+				B19F74282122F3190083A269 /* DDTableViewSectionGroupComponent.m in Sources */,
+				B19F74272122F3190083A269 /* DDTableViewComponent.m in Sources */,
 				B1615E052106FC4800354A56 /* NSString+ZZDate.m in Sources */,
 				B1387AC22100301400961510 /* UITabBar+badge.m in Sources */,
 				B1615E072106FC4800354A56 /* NSString+ZZURL.m in Sources */,
+				B19F74322122F3190083A269 /* DNChannelTitleView.m in Sources */,
 				B164F75A210739C90012B953 /* ZFMHotGuessAPIManager.m in Sources */,
 				B1387A52210027A200961510 /* main.m in Sources */,
+				B19F742F2122F3190083A269 /* UIViewController+DNPageController.m in Sources */,
+				B19F73EC2122D6F90083A269 /* ZFMCategoryViewController.m in Sources */,
+				B19F74292122F3190083A269 /* DDTableViewSectionComponent.m in Sources */,
+				B19F73E02122CAC00083A269 /* ZFMHomeViewModel.m in Sources */,
+				B19F74302122F3190083A269 /* DNPageChannelStyle.m in Sources */,
 				B1615E022106FC4800354A56 /* NSDictionary+ZZGuard.m in Sources */,
 				B1615E092106FC4800354A56 /* NSObject+USerDefault.m in Sources */,
 				B1615E042106FC4800354A56 /* NSString+ZZHash.m in Sources */,
 				B1615E0B2106FC4800354A56 /* NSObject+UIViewController.m in Sources */,
+				B19F743C2122F34F0083A269 /* ZFMFontManager.m in Sources */,
 				B1387AC12100301400961510 /* NXNavigationController.m in Sources */,
 				B1387AD72100356500961510 /* ZFMConsts.m in Sources */,
 				B1387ABB2100301400961510 /* NavigationConfig.m in Sources */,
 				B1387AE6210036C000961510 /* ZFMMineViewController.m in Sources */,
 				B1615E012106FC4800354A56 /* NSData+ZZHash.m in Sources */,
+				B1CD63F1211D8F36008F90A4 /* UIView+JAExt.m in Sources */,
 				B1387A44210027A100961510 /* AppDelegate.m in Sources */,
 				B1615E0C2106FC4800354A56 /* NSDate+ZZString.m in Sources */,
+				B19F74342122F3190083A269 /* DNPageCollectionViewCell.m in Sources */,
+				B19F74352122F3190083A269 /* DNPageScrollView.m in Sources */,
 				B1387ABA2100301400961510 /* NXTabBarController.m in Sources */,
+				B19F74332122F3190083A269 /* DNPageCollectionViewFlowLayout.m in Sources */,
+				B19F742D2122F3190083A269 /* DNContentScrollView.m in Sources */,
 				B1387AC02100301400961510 /* NavigationView.m in Sources */,
+				B19F74312122F3190083A269 /* DNPageCollectionView.m in Sources */,
 				B1387ABD2100301400961510 /* NXTabBar.m in Sources */,
+				B19F73EF2122D8B20083A269 /* ZFMHomeChildFactory.m in Sources */,
 				B1387AE7210036C000961510 /* ZFMDiscoverViewController.m in Sources */,
 				B164F76721073BCE0012B953 /* Target_ZFMRequestService.m in Sources */,
 				B164F76A21073BEA0012B953 /* ZFMRequestService.m in Sources */,
+				B19F74222122F3190083A269 /* DDCollectionViewComponent.m in Sources */,
+				B19F74232122F3190083A269 /* DDCollectionViewSectionGroupComponent.mm in Sources */,
+				B19F742A2122F3190083A269 /* DDTableViewItemComponent.m in Sources */,
 				B1615E062106FC4800354A56 /* NSString+ZZHeight.m in Sources */,
+				B1CD63EB211D6C09008F90A4 /* ZFMTableViewCell.m in Sources */,
+				B19F73E92122D6D00083A269 /* ZFMRecommendViewController.m in Sources */,
+				B19F74252122F3190083A269 /* DDCollectionViewSectionComponent.mm in Sources */,
+				B19F742E2122F3190083A269 /* UIView+JAExtForPageScroll.m in Sources */,
+				B19F74242122F3190083A269 /* DDCollectionViewItemComponent.m in Sources */,
 				B1387AE5210036C000961510 /* ZFMHomeViewController.m in Sources */,
+				B19F74262122F3190083A269 /* DDCollectionViewStatusComponent.m in Sources */,
 				B1615E002106FC4800354A56 /* UIView+ZZFrame.m in Sources */,
 				B1387ABE2100301400961510 /* NXTabBarConfig.m in Sources */,
 				B1615E0A2106FC4800354A56 /* NSObject+ZZAlert.m in Sources */,
 				B164F76421073B7C0012B953 /* Target_CTAppContext.m in Sources */,
+				B19F742C2122F3190083A269 /* DNChannelScrollView.m in Sources */,
 				B164F74B21071F270012B953 /* ZFMHomeAPIManager.m in Sources */,
 				B1387AE4210036C000961510 /* ZFMListenViewController.m in Sources */,
 				B1615E082106FC4800354A56 /* NSObject+ZZIP.m in Sources */,
@@ -879,16 +1119,19 @@
 			baseConfigurationReference = 135BDA4CC371D3563230B07B /* Pods-ZZFM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QAX27ZT3AZ;
 				INFOPLIST_FILE = ZZFM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.g.SGRecord.ZZFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -898,16 +1141,19 @@
 			baseConfigurationReference = 8D240EB735918EABF1D8CC10 /* Pods-ZZFM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = QAX27ZT3AZ;
 				INFOPLIST_FILE = ZZFM/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.g.SGRecord.ZZFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

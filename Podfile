@@ -11,5 +11,6 @@ pod 'CTNetworking'
 pod 'SDWebImage'
 pod 'YYModel'
 pod 'ReactiveCocoa','2.5'
+#pod 'DDComponent','0.5.5'
 
 end

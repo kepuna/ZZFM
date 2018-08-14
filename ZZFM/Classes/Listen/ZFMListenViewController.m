@@ -7,8 +7,11 @@
 //  
 
 #import "ZFMListenViewController.h"
+#import "ZFMTableViewCell.h"
 
-@interface ZFMListenViewController ()
+@interface ZFMListenViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -17,6 +20,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    self.tableView.rowHeight = 60;
+    [self.tableView registerClass:[ZFMTableViewCell class] forCellReuseIdentifier:@"cell"];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ZFMTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.textLabel.text = @"111";
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
