@@ -1,4 +1,5 @@
 
 #import "ZFMConsts.h"
 
-NSString * const ZFMBundleMainFramework = @"MainFramework";
+NSString * const ZFMResourceMain = @"ZFMResourceMain";
+NSString * const ZFMResourceListen = @"ZFMResourceListen";

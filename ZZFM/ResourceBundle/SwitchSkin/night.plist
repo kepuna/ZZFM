@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>super</key>
+	<string>base</string>
+	<key>strings</key>
+	<dict>
+		<key>DNImageNavBackIcon</key>
+		<string>btnBackBold</string>
+	</dict>
+	<key>images</key>
+	<dict>
+		<key>DNImageNavBackIcon</key>
+		<string>btnBackBold</string>
+		<key>bg</key>
+		<string>bg2</string>
+	</dict>
+	<key>fonts</key>
+	<dict>
+		<key>content</key>
+		<string>22</string>
+		<key>fontSizeTabBar</key>
+		<string>15</string>
+		<key>fontSizeNavTitle</key>
+		<string>25</string>
+	</dict>
+	<key>colors</key>
+	<dict>
+		<key>DNColorMainPage</key>
+		<string>#242424</string>
+		<key>yellow</key>
+		<string>rgba(128,  128,  0, 0.8)</string>
+		<key>colorNavBackground</key>
+		<string>#1A1A1A</string>
+		<key>colorTabBarBackground</key>
+		<string>#1A1A1A</string>
+		<key>colorTabBarItemNormal</key>
+		<string>#00ff00</string>
+		<key>colorTabBarItemSeleted</key>
+		<string>#FF9988</string>
+		<key>colorNavTitle</key>
+		<string>#FFFFFF</string>
+		<key>DNColorButtonTitleNormal</key>
+		<string>#ffffff</string>
+		<key>DNColorButtonBackground</key>
+		<string>#FF00FF</string>
+	</dict>
+</dict>
+</plist>

@@ -14,10 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CTMediator (18)
-  - CTNetworking (10):
-    - AFNetworking
-    - CTMediator
+  - DDSkin (0.0.1)
+  - DNMainFramework (3)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -28,22 +26,27 @@ PODS:
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
+  - YYCache (1.0.4)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - CTNetworking
+  - AFNetworking
+  - DDSkin
+  - DNMainFramework
   - ReactiveCocoa (= 2.5)
   - SDWebImage
+  - YYCache
   - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CTMediator: 420e9d90f9f1fd740caf2238ed7ed64dc621c5b7
-  CTNetworking: ebbd1b89a20bc9c298399f4523357cc74be29a6a
+  DDSkin: 6f37cfa01b1ed4606a08c49c33274f806d480226
+  DNMainFramework: d5d376fd4f618a5f116e88c227d7f2e7e81a80e5
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: ba9e09b86c0b68346454235631156bd3c4628b82
+PODFILE CHECKSUM: 889c8dcb6ff3bb1c24a20a0974b8a0eb63b24b6a
 
 COCOAPODS: 1.4.0

@@ -8,6 +8,11 @@
 
 #import "ZFMColorManager.h"
 
+NSString * const DNColorMainPage = @"DNColorMainPage";
+NSString * const DNColorButtonTitleNormal = @"DNColorButtonTitleNormal";
+NSString * const DNColorButtonBackground = @"DNColorButtonBackground";
+NSString * const DNImageNavBackIcon = @"DNImageNavBackIcon";
+
 @implementation ZFMColorManager
 
 #pragma mark - Intial Methods
@@ -24,9 +29,18 @@
 {
     self = [super init];
     if (self) {
+        _colorMainPage = [self _colorWithHexString:@"FFFFFF"];
+        _colorNavBackground = [self _colorWithHexString:@"09A55A"];
+        _colorNavTitle = [self _colorWithHexString:@"FFFFFF"];
+        _colorTabBarBackground = [UIColor darkTextColor];
+        _colorTabBarItemNormal = [self _colorWithHexString:@"969696"];
+        _colorTabBarItemSeleted = [self _colorWithHexString:@"09A55A"];
         _colorPlaceholder = [self _colorWithHexString:@"ECECEC"];
-        _colorPageScrollSelected = [UIColor darkTextColor];
-        _colorPageScrollNormal = [UIColor lightGrayColor];
+        _colorPageScrollSelected = [self _colorWithHexString:@"09A55A"];
+        _colorPageScrollNormal = [self _colorWithHexString:@"969696"];
+        _colorLine = [self _colorWithHexString:@"e6e6e6"];
+        _colorBlack32 = [self _colorWithHexString:@"323232"];
+        _colorGray96 = [self _colorWithHexString:@"969696"];
     }
     return self;
 }

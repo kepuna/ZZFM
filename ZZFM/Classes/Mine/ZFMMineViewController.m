@@ -7,8 +7,15 @@
 //  我的 控制器
 
 #import "ZFMMineViewController.h"
+#import "ZFMPublic.h"
+#import "AppSwitchMode.h"
+#import <UIButton+DDSkin.h>
+#import "ZFMSettingViewController.h"
 
 @interface ZFMMineViewController ()
+
+@property (nonatomic, assign) BOOL isNight;
+@property (nonatomic, strong) UIButton *testButton;
 
 @end
 
@@ -16,12 +23,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColorSkinKey = DNColorMainPage;
+    self.view.alpha = 1;
+    [self.view addSubview:self.testButton];
+    self.testButton.frame = CGRectMake(100, 100, 60, 40);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    self.isNight = !self.isNight;
+    
+    NSString *value = self.isNight ? DNNotificationSwitchModeValueNight : DNNotificationSwitchModeValueDay;
+    [[NSNotificationCenter defaultCenter] postNotificationName:DNNotificationSwitchMode object:nil userInfo:@{DNNotificationSwitchModeKey:value}];
+}
+
+- (void)s_buttonClickEvent {
+    ZFMSettingViewController *vc = [[ZFMSettingViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (UIButton *)testButton {
+    if (_testButton == nil) {
+        _testButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_testButton setTitle:@"跳转" forState:UIControlStateNormal];
+        _testButton.normalTitleColorSkinKey = DNColorButtonTitleNormal;
+        _testButton.backgroundColorSkinKey = DNColorButtonBackground;
+        [_testButton addTarget:self action:@selector(s_buttonClickEvent) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _testButton;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 /*

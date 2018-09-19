@@ -52,6 +52,9 @@
 /** PingFangSC-Regular 20号字 */
 @property (nonatomic, readonly, copy) UIFont *size20PingFangSC_Regular;
 
+@property (nonatomic, readonly, copy) NSString *fontSizeTabBar;
+@property (nonatomic, readonly, copy) NSString *fontSizeNavTitle;
+
 + (instancetype)manager;
 
 @end

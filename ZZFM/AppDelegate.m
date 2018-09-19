@@ -8,8 +8,13 @@
 
 #import "AppDelegate.h"
 #import "AppServiceModel.h"
+#import "AppSwitchMode.h"
+#import "ZFMMacro.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) AppServiceModel *appServiceModel;
+@property (nonatomic, strong) AppSwitchMode *switchMode;
 
 @end
 
@@ -17,11 +22,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
-    [AppServiceModel invokeThisMethodCreateMainControllers];
+    [self.appServiceModel invokeThisMethodInDidFinishLaunching];
+    [self.appServiceModel invokeThisMethodCreateMainControllers];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [AppServiceModel invokeThisMethodGetRootViewController];
+    self.window.rootViewController = [self.appServiceModel invokeThisMethodGetRootViewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
@@ -29,6 +34,19 @@
 
 }
 
+- (AppSwitchMode *)switchMode {
+    if (_switchMode == nil) {
+        _switchMode = [[AppSwitchMode alloc] init];
+    }
+    return _switchMode;
+}
+
+- (AppServiceModel *)appServiceModel {
+    if (_appServiceModel == nil) {
+        _appServiceModel = [[AppServiceModel alloc] init];
+    }
+    return _appServiceModel;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -54,6 +72,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [self.switchMode removeNotificationSwitchModel];
 }
 
 

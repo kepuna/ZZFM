@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>objects</key>
+	<dict/>
+	<key>booleans</key>
+	<dict/>
+	<key>strings</key>
+	<dict>
+		<key>buttonTitle</key>
+		<string>白天按钮</string>
+		<key>DNImageNavBackIcon</key>
+		<string>btnBackBold_white</string>
+	</dict>
+	<key>urls</key>
+	<dict/>
+	<key>numbers</key>
+	<dict>
+		<key>separator</key>
+		<string>5</string>
+	</dict>
+	<key>fonts</key>
+	<dict>
+		<key>content</key>
+		<string>12</string>
+		<key>fontSizeTabBar</key>
+		<string>12</string>
+		<key>fontSizeNavTitle</key>
+		<string>18</string>
+	</dict>
+	<key>colors</key>
+	<dict>
+		<key>DNColorMainPage</key>
+		<string>#ffffff</string>
+		<key>colorNavBackground</key>
+		<string>rgb(9,165,90)</string>
+		<key>colorTabBarBackground</key>
+		<string>rgb(96,96,96)</string>
+		<key>colorTabBarItemNormal</key>
+		<string>rgb(255,255,0)</string>
+		<key>colorTabBarItemSeleted</key>
+		<string>rgb(255, 00, 90)</string>
+		<key>colorNavTitle</key>
+		<string>#FF0000</string>
+		<key>DNColorButtonTitleNormal</key>
+		<string>#000000</string>
+		<key>DNColorButtonBackground</key>
+		<string>#0000FF</string>
+	</dict>
+	<key>images</key>
+	<dict>
+		<key>DNImageNavBackIcon</key>
+		<string>btnBackBold_white</string>
+		<key>bg</key>
+		<string>bg1</string>
+	</dict>
+</dict>
+</plist>

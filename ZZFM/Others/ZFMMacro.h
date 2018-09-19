@@ -20,6 +20,10 @@
 
 #define kPageScrollHeight kHPercentage(44.0)
 
+#define UIColorRGB(_red_, _green_, _blue_, _alpha_) [UIColor colorWithRed:(_red_)/255.0 green:(_green_)/255.0 blue:(_blue_)/255.0 alpha:(_alpha_)]
+
+#define UIColorRandom ([UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1])
+
 ///----------------------
 ///   适配iOS & iPhoneX
 ///----------------------

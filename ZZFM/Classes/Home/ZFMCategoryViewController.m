@@ -7,7 +7,7 @@
 //
 
 #import "ZFMCategoryViewController.h"
-
+#import "ZFMPublic.h"
 @interface ZFMCategoryViewController ()
 
 @end
@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [ZFMColorManager manager].colorMainPage;
 }
 
 - (void)didReceiveMemoryWarning {

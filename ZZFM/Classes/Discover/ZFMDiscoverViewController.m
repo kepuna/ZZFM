@@ -7,6 +7,7 @@
 //
 
 #import "ZFMDiscoverViewController.h"
+#import "ZFMPublic.h"
 
 @interface ZFMDiscoverViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColorSkinKey = DNColorMainPage;
+    self.view.alpha = 1;
 }
 
 - (void)didReceiveMemoryWarning {

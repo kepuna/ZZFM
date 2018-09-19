@@ -7,9 +7,9 @@
 //
 
 #import "ZFMRecommendViewController.h"
+#import "ZFMPublic.h"
 
-@interface ZFMRecommendViewController ()
-
+@interface ZFMRecommendViewController () 
 
 @end
 
@@ -17,8 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [ZFMColorManager manager].colorMainPage;
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

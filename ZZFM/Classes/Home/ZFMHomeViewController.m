@@ -7,8 +7,6 @@
 //  
 
 #import "ZFMHomeViewController.h"
-#import "ZFMHomeAPIManager.h"
-#import "ZFMHotGuessAPIManager.h"
 #import "ZFMPublic.h"
 // View
 #import "DNPageScrollView.h"
@@ -16,11 +14,7 @@
 
 #import "ZFMHomeViewModel.h"
 
-@interface ZFMHomeViewController () <CTAPIManagerCallBackDelegate, DNPageScrollViewDelegate,UINavigationControllerDelegate,DNPageScrollViewChildViewControllerDelegate>
-
-@property (nonatomic, strong) UIButton *startRequestButton;
-@property (nonatomic, strong) ZFMHomeAPIManager *homeAPIManager;
-@property (nonatomic, strong) ZFMHotGuessAPIManager *hotAPIManager;
+@interface ZFMHomeViewController () < DNPageScrollViewDelegate,UINavigationControllerDelegate,DNPageScrollViewChildViewControllerDelegate>
 
 @property (nonatomic, strong) DNPageScrollView *pageScrollView;
 @property (nonatomic, strong) DNPageChannelStyle *pageStyle;
@@ -33,28 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.startRequestButton.center = self.view.center;
-//    [self.startRequestButton sizeToFit];
-//    [self.view addSubview:self.startRequestButton];
-    
      [self.view addSubview:self.pageScrollView];
-}
-
-
-- (void)didTappedStartButton:(UIButton *)sender {
-//    [self.homeAPIManager loadData];
-    [self.hotAPIManager loadData];
-}
-
-#pragma mark - CTAPIManagerCallBackDelegate
-- (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager
-{
-    NSLog(@"SSS%@", [manager fetchDataWithReformer:nil]);
-}
-
-- (void)managerCallAPIDidFailed:(CTAPIBaseManager *)manager
-{
-    NSLog(@"EEEE%@", [manager fetchDataWithReformer:nil]);
 }
 
 #pragma mark - DNPageScrollViewDelegate
@@ -78,8 +51,8 @@
 - (DNPageScrollView *)pageScrollView {
     if (_pageScrollView == nil) {
         _pageScrollView = [[DNPageScrollView alloc] initWithFrame:CGRectMake(0, kNavH, SCREEN_WIDTH, SCREEN_HEIGHT) style:self.pageStyle channelNames:self.viewModel.scrollTitles parentViewController:self delegate:self];
-        _pageScrollView.contentView.backgroundColor = [UIColor whiteColor];
-        _pageScrollView.channelView.backgroundColor = [UIColor whiteColor];
+        _pageScrollView.contentView.backgroundColorSkinKey = DNColorMainPage;
+        _pageScrollView.channelView.backgroundColorSkinKey = DNColorMainPage;
     }
     return _pageScrollView;
 }
@@ -92,13 +65,15 @@
         _pageStyle.scrollLineWidth = kHPercentage(15);
         _pageStyle.scrollLinecornerRadius = kHPercentage(1.5);
         _pageStyle.titleMargin = kHPercentage(30);
-        _pageStyle.scrollLineColor = [UIColor orangeColor];
+        _pageStyle.scrollLineColor = [ZFMColorManager manager].colorPageScrollSelected;
         _pageStyle.titleFont = [ZFMFontManager manager].size16PingFangSC_Medium;
         _pageStyle.titleBigScale = 1.3;
         _pageStyle.normalTitleColor = [ZFMColorManager manager].colorPageScrollNormal;
-        _pageStyle.selectedTitleColor = [ZFMColorManager manager].colorPageScrollSelected;
+        _pageStyle.selectedTitleColor = [UIColor colorWithRed:9 / 255.0 green:165 / 255.0 blue:90 / 255.0 alpha:1]; //[ZFMColorManager manager].colorPageScrollSelected;
         _pageStyle.shadowCover = YES;
         _pageStyle.shadowCoverImageName = @"icon_pagescroll";
+        _pageStyle.bottomLineHeight = 0.5;
+        _pageStyle.bottomLineBackgroundColor = [ZFMColorManager manager].colorLine;
     }
     return _pageStyle;
 }
@@ -110,31 +85,6 @@
     return _viewModel;
 }
 
-- (ZFMHomeAPIManager *)homeAPIManager {
-    if (_homeAPIManager == nil) {
-        _homeAPIManager = [[ZFMHomeAPIManager alloc] init];
-        _homeAPIManager.delegate = self;
-    }
-    return _homeAPIManager;
-}
-
-- (ZFMHotGuessAPIManager *)hotAPIManager {
-    if (_hotAPIManager == nil) {
-        _hotAPIManager = [[ZFMHotGuessAPIManager alloc] init];
-        _hotAPIManager.delegate = self;
-    }
-    return _hotAPIManager;
-}
-
-- (UIButton *)startRequestButton {
-    if (_startRequestButton == nil) {
-        _startRequestButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_startRequestButton setTitle:@"send request" forState:UIControlStateNormal];
-        [_startRequestButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-        [_startRequestButton addTarget:self action:@selector(didTappedStartButton:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _startRequestButton;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

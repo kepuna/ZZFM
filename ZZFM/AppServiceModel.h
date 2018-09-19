@@ -17,10 +17,12 @@
  *  程序完成启动，在appdelegate中的 `-[AppDelegate didFinishLaunchingWithOptions:]`
  * 一开始的地方调用.
  */
-+ (void)invokeThisMethodInDidFinishLaunching;
+- (void)invokeThisMethodInDidFinishLaunching;
 
-+ (void)invokeThisMethodCreateMainControllers;
+- (void)invokeThisMethodCreateMainControllers;
 
-+ (UIViewController *)invokeThisMethodGetRootViewController;
+- (UIViewController *)invokeThisMethodGetRootViewController;
+/// 更新MainFramework 样式
+- (void)invokeThisMethodUpdateMainFrameworkStyle;
 
 @end

@@ -23,7 +23,8 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-    
+        _fontSizeTabBar = @"fontSizeTabBar";
+        _fontSizeNavTitle = @"fontSizeNavTitle";
         _size11PingFangSC_Medium = [UIFont fontWithName:@"PingFangSC-Medium" size:11];
         _size12PingFangSC_Medium = [UIFont fontWithName:@"PingFangSC-Medium" size:12];
         _size14PingFangSC_Medium = [UIFont fontWithName:@"PingFangSC-Medium" size:14];

@@ -8,4 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-FOUNDATION_EXTERN NSString * const ZFMBundleMainFramework; // CoinAnimation 的资源bundle
+FOUNDATION_EXTERN NSString * const ZFMResourceMain; //主页 的资源bundle
+FOUNDATION_EXTERN NSString * const ZFMResourceListen; // 我听资源bundle

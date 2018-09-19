@@ -1,0 +1,1 @@
+../../../DNMainFramework/DNMainFramework/Classes/NXTabBarConfig.h
