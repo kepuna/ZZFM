@@ -1,0 +1,6 @@
+framework module DNMainFramework {
+  umbrella header "DNMainFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

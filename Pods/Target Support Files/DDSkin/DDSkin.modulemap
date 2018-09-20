@@ -1,0 +1,6 @@
+framework module DDSkin {
+  umbrella header "DDSkin-umbrella.h"
+
+  export *
+  module * { export * }
+}

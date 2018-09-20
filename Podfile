@@ -5,6 +5,7 @@ source 'https://github.com/DoNewsCode/DNSpecs.git'
 platform :ios, '9.0'
 
 target 'ZZFM' do
+    
 
 # Pods for ZZFM
 
@@ -17,5 +18,6 @@ pod 'DNMainFramework'
 pod 'DDSkin'
 pod 'YYCache'
 pod 'AFNetworking'
+pod 'MJRefresh'
 
 end

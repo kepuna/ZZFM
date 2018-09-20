@@ -9,7 +9,7 @@
 #import "ZFMMineViewController.h"
 #import "ZFMPublic.h"
 #import "AppSwitchMode.h"
-#import <UIButton+DDSkin.h>
+#import <DDSkin/UIButton+DDSkin.h>
 #import "ZFMSettingViewController.h"
 
 @interface ZFMMineViewController ()
@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColorSkinKey = DNColorMainPage;
+    self.view.backgroundColor = [UIColor whiteColor];
     self.view.alpha = 1;
     [self.view addSubview:self.testButton];
     self.testButton.frame = CGRectMake(100, 100, 60, 40);
@@ -47,8 +47,7 @@
     if (_testButton == nil) {
         _testButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_testButton setTitle:@"跳转" forState:UIControlStateNormal];
-        _testButton.normalTitleColorSkinKey = DNColorButtonTitleNormal;
-        _testButton.backgroundColorSkinKey = DNColorButtonBackground;
+        _testButton.backgroundColor = [UIColor greenColor];
         [_testButton addTarget:self action:@selector(s_buttonClickEvent) forControlEvents:UIControlEventTouchUpInside];
     }
     return _testButton;

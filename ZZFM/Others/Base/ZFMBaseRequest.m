@@ -7,9 +7,9 @@
 //
 
 #import "ZFMBaseRequest.h"
-#import <YYModel.h>
 #import "DNNetworkManager.h"
 #import "ZFMResponseModel.h"
+#import <YYModel/YYModel.h>
 
 @implementation ZFMBaseRequest
 

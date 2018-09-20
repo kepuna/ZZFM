@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ABA5F83CF2F1E1E26A300E05 /* libPods-ZZFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1D3222FDDDE0C7A14EA1A1 /* libPods-ZZFM.a */; };
+		8CB20CC648ABFBEB0F8057B4 /* libPods-ZZFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 650D0D290CC8E84EAA55C376 /* libPods-ZZFM.a */; };
 		B12BEB332150D1ED00BB7F89 /* DNNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B12BEB2C2150D1ED00BB7F89 /* DNNetworkManager.m */; };
 		B12BEB342150D1ED00BB7F89 /* DNNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B12BEB302150D1ED00BB7F89 /* DNNetworkCache.m */; };
 		B12BEB352150D1ED00BB7F89 /* DNNetworkManager+SSL.m in Sources */ = {isa = PBXBuildFile; fileRef = B12BEB322150D1ED00BB7F89 /* DNNetworkManager+SSL.m */; };
@@ -48,6 +48,14 @@
 		B189FB2E2148F22400A9D88B /* day.plist in Resources */ = {isa = PBXBuildFile; fileRef = B189FB2B2148F22400A9D88B /* day.plist */; };
 		B189FB312148FC9500A9D88B /* AppSwitchMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B189FB302148FC9500A9D88B /* AppSwitchMode.m */; };
 		B189FB34214A43A000A9D88B /* ZFMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B189FB33214A43A000A9D88B /* ZFMSettingViewController.m */; };
+		B19278822153B2610007D8E6 /* SPPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B192787D2153B2610007D8E6 /* SPPageMenu.m */; };
+		B19278862153B2EC0007D8E6 /* ZZPageBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19278852153B2EC0007D8E6 /* ZZPageBaseViewController.m */; };
+		B19278892153B3070007D8E6 /* ZZTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19278882153B3070007D8E6 /* ZZTableView.m */; };
+		B19278922153B7C20007D8E6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B192788D2153B7C10007D8E6 /* FirstViewController.m */; };
+		B19278932153B7C20007D8E6 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B192788E2153B7C10007D8E6 /* ThirdViewController.m */; };
+		B19278942153B7C20007D8E6 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B192788F2153B7C20007D8E6 /* FourViewController.m */; };
+		B19278952153B7C20007D8E6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19278912153B7C20007D8E6 /* SecondViewController.m */; };
+		B19278982153B8740007D8E6 /* ZZHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B19278972153B8740007D8E6 /* ZZHeaderView.m */; };
 		B19F73E02122CAC00083A269 /* ZFMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73DF2122CAC00083A269 /* ZFMHomeViewModel.m */; };
 		B19F73E92122D6D00083A269 /* ZFMRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73E82122D6D00083A269 /* ZFMRecommendViewController.m */; };
 		B19F73EC2122D6F90083A269 /* ZFMCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19F73EB2122D6F90083A269 /* ZFMCategoryViewController.m */; };
@@ -119,7 +127,7 @@
 
 /* Begin PBXFileReference section */
 		135BDA4CC371D3563230B07B /* Pods-ZZFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM.debug.xcconfig"; sourceTree = "<group>"; };
-		6F1D3222FDDDE0C7A14EA1A1 /* libPods-ZZFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650D0D290CC8E84EAA55C376 /* libPods-ZZFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZZFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D240EB735918EABF1D8CC10 /* Pods-ZZFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM.release.xcconfig"; sourceTree = "<group>"; };
 		B12BEB2B2150D1ED00BB7F89 /* DNNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNNetworkCache.h; sourceTree = "<group>"; };
 		B12BEB2C2150D1ED00BB7F89 /* DNNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNNetworkManager.m; sourceTree = "<group>"; };
@@ -208,6 +216,22 @@
 		B189FB302148FC9500A9D88B /* AppSwitchMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppSwitchMode.m; sourceTree = "<group>"; };
 		B189FB32214A43A000A9D88B /* ZFMSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMSettingViewController.h; sourceTree = "<group>"; };
 		B189FB33214A43A000A9D88B /* ZFMSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMSettingViewController.m; sourceTree = "<group>"; };
+		B192787D2153B2610007D8E6 /* SPPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPageMenu.m; sourceTree = "<group>"; };
+		B192787E2153B2610007D8E6 /* SPPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPageMenu.h; sourceTree = "<group>"; };
+		B19278842153B2EC0007D8E6 /* ZZPageBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPageBaseViewController.h; sourceTree = "<group>"; };
+		B19278852153B2EC0007D8E6 /* ZZPageBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPageBaseViewController.m; sourceTree = "<group>"; };
+		B19278872153B3070007D8E6 /* ZZTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZTableView.h; sourceTree = "<group>"; };
+		B19278882153B3070007D8E6 /* ZZTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZTableView.m; sourceTree = "<group>"; };
+		B192788A2153B7C10007D8E6 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		B192788B2153B7C10007D8E6 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		B192788C2153B7C10007D8E6 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B192788D2153B7C10007D8E6 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B192788E2153B7C10007D8E6 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		B192788F2153B7C20007D8E6 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		B19278902153B7C20007D8E6 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B19278912153B7C20007D8E6 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B19278962153B8740007D8E6 /* ZZHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZHeaderView.h; sourceTree = "<group>"; };
+		B19278972153B8740007D8E6 /* ZZHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZHeaderView.m; sourceTree = "<group>"; };
 		B19F73DE2122CAC00083A269 /* ZFMHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMHomeViewModel.h; sourceTree = "<group>"; };
 		B19F73DF2122CAC00083A269 /* ZFMHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMHomeViewModel.m; sourceTree = "<group>"; };
 		B19F73E12122CB390083A269 /* ZFMPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPublic.h; sourceTree = "<group>"; };
@@ -296,7 +320,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABA5F83CF2F1E1E26A300E05 /* libPods-ZZFM.a in Frameworks */,
+				8CB20CC648ABFBEB0F8057B4 /* libPods-ZZFM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +489,8 @@
 		B1387AC42100315B00961510 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B192787F2153B2610007D8E6 /* PageScrollView */,
+				B192787C2153B2610007D8E6 /* SPPageMenu */,
 				B12BEB2A2150D1ED00BB7F89 /* DoNewsNetworking */,
 				B19F74362122F32E0083A269 /* UI */,
 			);
@@ -646,6 +672,36 @@
 			path = SwitchSkin;
 			sourceTree = "<group>";
 		};
+		B192787C2153B2610007D8E6 /* SPPageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B192787D2153B2610007D8E6 /* SPPageMenu.m */,
+				B192787E2153B2610007D8E6 /* SPPageMenu.h */,
+			);
+			path = SPPageMenu;
+			sourceTree = "<group>";
+		};
+		B192787F2153B2610007D8E6 /* PageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B19278902153B7C20007D8E6 /* FirstViewController.h */,
+				B192788D2153B7C10007D8E6 /* FirstViewController.m */,
+				B192788A2153B7C10007D8E6 /* FourViewController.h */,
+				B192788F2153B7C20007D8E6 /* FourViewController.m */,
+				B192788C2153B7C10007D8E6 /* SecondViewController.h */,
+				B19278912153B7C20007D8E6 /* SecondViewController.m */,
+				B192788B2153B7C10007D8E6 /* ThirdViewController.h */,
+				B192788E2153B7C10007D8E6 /* ThirdViewController.m */,
+				B19278842153B2EC0007D8E6 /* ZZPageBaseViewController.h */,
+				B19278852153B2EC0007D8E6 /* ZZPageBaseViewController.m */,
+				B19278872153B3070007D8E6 /* ZZTableView.h */,
+				B19278882153B3070007D8E6 /* ZZTableView.m */,
+				B19278962153B8740007D8E6 /* ZZHeaderView.h */,
+				B19278972153B8740007D8E6 /* ZZHeaderView.m */,
+			);
+			path = PageScrollView;
+			sourceTree = "<group>";
+		};
 		B19F73F02122F3180083A269 /* DDComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -809,7 +865,7 @@
 				B164F76F210856FC0012B953 /* libReactiveCocoa.a */,
 				B164F76D210854FD0012B953 /* libDDComponent.a */,
 				B164F76B210854760012B953 /* libDDComponent.a */,
-				6F1D3222FDDDE0C7A14EA1A1 /* libPods-ZZFM.a */,
+				650D0D290CC8E84EAA55C376 /* libPods-ZZFM.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -956,9 +1012,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DDSkin/DDSkin.framework",
+				"${BUILT_PRODUCTS_DIR}/DNMainFramework/DNMainFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDSkin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DNMainFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -989,9 +1060,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZZFM/Pods-ZZFM-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1009,6 +1083,7 @@
 				B1387AA22100299500961510 /* AppServiceModel.m in Sources */,
 				B1AA0D52213D3A5600155A91 /* UIImage+ZZAdd.m in Sources */,
 				B1615E032106FC4800354A56 /* NSArray+ZZGuard.m in Sources */,
+				B19278952153B7C20007D8E6 /* SecondViewController.m in Sources */,
 				B19F742B2122F3190083A269 /* UIView+JAExt.m in Sources */,
 				B19F74282122F3190083A269 /* DDTableViewSectionGroupComponent.m in Sources */,
 				B19F74272122F3190083A269 /* DDTableViewComponent.m in Sources */,
@@ -1027,9 +1102,11 @@
 				B1615E022106FC4800354A56 /* NSDictionary+ZZGuard.m in Sources */,
 				B1615E092106FC4800354A56 /* NSObject+USerDefault.m in Sources */,
 				B1615E042106FC4800354A56 /* NSString+ZZHash.m in Sources */,
+				B19278982153B8740007D8E6 /* ZZHeaderView.m in Sources */,
 				B1615E0B2106FC4800354A56 /* NSObject+UIViewController.m in Sources */,
 				B19F743C2122F34F0083A269 /* ZFMFontManager.m in Sources */,
 				B1AA0D77213E192F00155A91 /* ZFMAlbumDetailViewController.m in Sources */,
+				B19278892153B3070007D8E6 /* ZZTableView.m in Sources */,
 				B1387AD72100356500961510 /* ZFMConsts.m in Sources */,
 				B12BEB3B21510C0500BB7F89 /* ZFMBaseRequest.m in Sources */,
 				B12BEB4521510E3C00BB7F89 /* ZFMResponseModel.m in Sources */,
@@ -1052,10 +1129,13 @@
 				B19F74222122F3190083A269 /* DDCollectionViewComponent.m in Sources */,
 				B19F74232122F3190083A269 /* DDCollectionViewSectionGroupComponent.mm in Sources */,
 				B19F742A2122F3190083A269 /* DDTableViewItemComponent.m in Sources */,
+				B19278862153B2EC0007D8E6 /* ZZPageBaseViewController.m in Sources */,
 				B1615E062106FC4800354A56 /* NSString+ZZHeight.m in Sources */,
+				B19278932153B7C20007D8E6 /* ThirdViewController.m in Sources */,
 				B1AA0D72213E18E000155A91 /* ZFMListenRecommendListComponent.m in Sources */,
 				B12BEB522151EB3D00BB7F89 /* ZFMAlbumDetailModel.m in Sources */,
 				B19F73E92122D6D00083A269 /* ZFMRecommendViewController.m in Sources */,
+				B19278922153B7C20007D8E6 /* FirstViewController.m in Sources */,
 				B19F74252122F3190083A269 /* DDCollectionViewSectionComponent.mm in Sources */,
 				B189FB312148FC9500A9D88B /* AppSwitchMode.m in Sources */,
 				B19F742E2122F3190083A269 /* UIView+JAExtForPageScroll.m in Sources */,
@@ -1069,7 +1149,9 @@
 				B1AA0D74213E18E000155A91 /* ZFMListenViewController.m in Sources */,
 				B1AA0D73213E18E000155A91 /* ZFMListenRecommendListCellFrameModel.m in Sources */,
 				B1AA0D53213D3A5600155A91 /* UIImageView+TGCache.m in Sources */,
+				B19278822153B2610007D8E6 /* SPPageMenu.m in Sources */,
 				B1615E082106FC4800354A56 /* NSObject+ZZIP.m in Sources */,
+				B19278942153B7C20007D8E6 /* FourViewController.m in Sources */,
 				B189FB34214A43A000A9D88B /* ZFMSettingViewController.m in Sources */,
 				B12BEB552152217000BB7F89 /* ZFMAlbumDetailViewModel.m in Sources */,
 			);
