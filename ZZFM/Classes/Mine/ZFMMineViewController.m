@@ -11,6 +11,11 @@
 #import "AppSwitchMode.h"
 #import <DDSkin/UIButton+DDSkin.h>
 #import "ZFMSettingViewController.h"
+#import "ZZStyle2PageViewController.h"
+
+#import "ZFM5ViewController.h"
+#import "ThirdViewController.h"
+#import "FourViewController.h"
 
 @interface ZFMMineViewController ()
 
@@ -39,7 +44,13 @@
 }
 
 - (void)s_buttonClickEvent {
-    ZFMSettingViewController *vc = [[ZFMSettingViewController alloc] init];
+    
+    
+    NSArray *titles = @[@"简介",@"节目",@"找相似"];
+    NSArray *controllers = @[[[ZFM5ViewController alloc] init],[[ZFM5ViewController alloc] init],[[ZFM5ViewController alloc] init],[[ZFM5ViewController alloc] init]];
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 200)];
+    headerView.backgroundColor = [UIColor yellowColor];
+    ZZStyle2PageViewController *vc = [[ZZStyle2PageViewController alloc] initWithItemTitles:titles controllers:controllers headerView:headerView];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

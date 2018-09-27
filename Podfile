@@ -19,5 +19,7 @@ pod 'DDSkin'
 pod 'YYCache'
 pod 'AFNetworking'
 pod 'MJRefresh'
+pod 'YYText'
+pod 'DNCommonKit'
 
 end

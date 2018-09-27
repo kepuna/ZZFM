@@ -33,6 +33,10 @@
 @property (nonatomic, readonly, copy) UIFont *size50PingFangSC_Medium;
 
 
+/** PingFangSC-Regular 10号字 */
+@property (nonatomic, readonly, copy) UIFont *size10PingFangSC_Regular;
+/** PingFangSC-Regular 11号字 */
+@property (nonatomic, readonly, copy) UIFont *size11PingFangSC_Regular;
 /** PingFangSC-Regular 12号字 */
 @property (nonatomic, readonly, copy) UIFont *size12PingFangSC_Regular;
 /** PingFangSC-Regular 13号字 */

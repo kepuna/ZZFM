@@ -11,25 +11,27 @@
 #import "ZZTableView.h"
 #import "ZZHeaderView.h"
 #import "SPPageMenu.h"
-
-#import "FirstViewController.h"
-#import "SecondViewController.h"
-#import "ThirdViewController.h"
-#import "FourViewController.h"
+#import "ZZPageBaseViewController.h"
 
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
+//#define HeaderViewH 200
 
 @interface ZFMSettingViewController ()<SPPageMenuDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
-@property (nonatomic, strong) ZZTableView *tableView;
-@property (nonatomic, strong) ZZHeaderView *headerView;
-@property (nonatomic, strong) SPPageMenu *pageMenu;
+@property (nonatomic, strong) UIScrollView *childVCScrollView;
 @property (nonatomic, assign) CGPoint lastPoint;
 @property (nonatomic, assign) BOOL headerScrollViewScrolling;
-@property (nonatomic, strong) UIScrollView *childVCScrollView;
 @property (nonatomic, assign) BOOL other;
+
+@property (nonatomic, strong) ZZTableView *tableView;
+@property (nonatomic, strong) SPPageMenu *pageMenu;
+
+@property (nonatomic, copy) NSArray *itemTitles;
+@property (nonatomic, copy) NSArray *controllers;
+@property (nonatomic, assign) CGFloat headerViewH;
+@property (nonatomic, strong) UIView *headerView;
 
 @end
 
@@ -39,20 +41,26 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+- (instancetype)initWithItemTitles:(NSArray<NSString *> *)titles controllers:(NSArray<UIViewController *> *)controllers headerView:(UIView *)headerView {
+    if (self == [super init]) {
+        self.itemTitles = titles;
+        self.controllers = controllers;
+        self.headerViewH = headerView.bounds.size.height;
+        self.headerView = headerView;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationController.navigationBar.translucent = NO;
     self.view.backgroundColor = [UIColor whiteColor];
-    
     [self.view addSubview:self.tableView];
     
-    // 添加4个子控制器
-    [self addChildViewController:[[FirstViewController alloc] init]];
-    [self addChildViewController:[[SecondViewController alloc] init]];
-    [self addChildViewController:[[ThirdViewController alloc] init]];
-    [self addChildViewController:[[FourViewController alloc] init]];
+    for (UIViewController *controller in self.controllers) {
+        [self addChildViewController:controller];
+    }
     
     // 先将第一个子控制的view添加到scrollView上去
     [self.scrollView addSubview:self.childViewControllers[0].view];
@@ -81,7 +89,7 @@
 - (void)s_subTableViewDidScroll:(NSNotification *)noti {
     UIScrollView *scrollView = noti.object;
     self.childVCScrollView = scrollView;
-    if (self.tableView.contentOffset.y < HeaderViewH) {
+    if (self.tableView.contentOffset.y < self.headerViewH) {
         scrollView.contentOffset = CGPointZero;
         scrollView.showsVerticalScrollIndicator = NO;
         
@@ -127,12 +135,12 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (self.tableView == scrollView) {
-        if ((self.childVCScrollView && _childVCScrollView.contentOffset.y > 0) || (scrollView.contentOffset.y > HeaderViewH)) {
-            self.tableView.contentOffset = CGPointMake(0, HeaderViewH);
+        if ((self.childVCScrollView && _childVCScrollView.contentOffset.y > 0) || (scrollView.contentOffset.y > self.headerViewH)) {
+            self.tableView.contentOffset = CGPointMake(0, self.headerViewH);
         }
         CGFloat offSetY = scrollView.contentOffset.y;
         
-        if (offSetY < HeaderViewH) {
+        if (offSetY < self.headerViewH) {
             // 发送通知
             [[NSNotificationCenter defaultCenter] postNotificationName:@"headerViewToTop" object:nil];
         }
@@ -167,8 +175,8 @@
     targetViewController.view.frame = CGRectMake(kScreenW*toIndex, 0, kScreenW, kScreenH-insert);
     UIScrollView *s = targetViewController.view.subviews[0];
     CGPoint contentOffset = s.contentOffset;
-    if (contentOffset.y >= HeaderViewH) {
-        contentOffset.y = HeaderViewH;
+    if (contentOffset.y >= self.headerViewH) {
+        contentOffset.y = self.headerViewH;
     }
     s.contentOffset = contentOffset;
     [self.scrollView addSubview:targetViewController.view];
@@ -202,36 +210,36 @@
     return _tableView;
 }
 
-- (ZZHeaderView *)headerView {
-    
-    if (!_headerView) {
-        _headerView = [[ZZHeaderView alloc] init];
-        _headerView.frame = CGRectMake(0, 0, kScreenW, HeaderViewH);
-        _headerView.backgroundColor = [UIColor clearColor];
-        _headerView.layer.masksToBounds = NO;
-        
-        UIView *contentView = [[UIView alloc] initWithFrame:_headerView.bounds];
-        contentView.backgroundColor = [UIColor greenColor];
-        [_headerView addSubview:contentView];
-        
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(0, 0, 60, 30);
-        btn.center = CGPointMake(_headerView.center.x, _headerView.center.y);
-        btn.backgroundColor = [UIColor yellowColor];
-        [btn setTitle:@"点我" forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_headerView addSubview:btn];
-        
-    }
-    return _headerView;
-}
+//- (ZZHeaderView *)headerView {
+//
+//    if (!_headerView) {
+//        _headerView = [[ZZHeaderView alloc] init];
+//        _headerView.frame = CGRectMake(0, 0, kScreenW, self.headerViewH);
+//        _headerView.backgroundColor = [UIColor clearColor];
+//        _headerView.layer.masksToBounds = NO;
+//
+//        UIView *contentView = [[UIView alloc] initWithFrame:_headerView.bounds];
+//        contentView.backgroundColor = [UIColor greenColor];
+//        [_headerView addSubview:contentView];
+//
+//        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        btn.frame = CGRectMake(0, 0, 60, 30);
+//        btn.center = CGPointMake(_headerView.center.x, _headerView.center.y);
+//        btn.backgroundColor = [UIColor yellowColor];
+//        [btn setTitle:@"点我" forState:UIControlStateNormal];
+//        [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+//        [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+//        [_headerView addSubview:btn];
+//
+//    }
+//    return _headerView;
+//}
 
 - (SPPageMenu *)pageMenu {
     
     if (!_pageMenu) {
         _pageMenu = [SPPageMenu pageMenuWithFrame:CGRectMake(0, 0, kScreenW, PageMenuH) trackerStyle:SPPageMenuTrackerStyleLineAttachment];
-        [_pageMenu setItems:@[@"第一页",@"第二页",@"第三页",@"第四页"] selectedItemIndex:0];
+        [_pageMenu setItems:self.itemTitles selectedItemIndex:0];
         _pageMenu.delegate = self;
         _pageMenu.itemTitleFont = [UIFont systemFontOfSize:16];
         _pageMenu.selectedItemTitleColor = [UIColor blackColor];

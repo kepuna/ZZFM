@@ -17,6 +17,9 @@
 #import "UIImageView+TGCache.h"
 #import "UIButton+TitlePlace.h"
 #import "NSObject+UIViewController.h"
+#import "NSString+ZZHeight.h"
+#import <NSArray+ZZGuard.h>
+#import <NSDictionary+ZZGuard.h>
 
 #import "ZFMConsts.h"
 #import "ZFMMacro.h"

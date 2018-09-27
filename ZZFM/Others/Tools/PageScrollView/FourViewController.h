@@ -6,8 +6,8 @@
 //  Copyright © 2017年 iDress. All rights reserved.
 //
 
-#import "ZZPageBaseViewController.h"
+#import "ZZStyle2PageBaseViewController.h"
 
-@interface FourViewController : ZZPageBaseViewController
+@interface FourViewController : ZZStyle2PageBaseViewController
 
 @end

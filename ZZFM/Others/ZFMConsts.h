@@ -10,3 +10,4 @@
 
 FOUNDATION_EXTERN NSString * const ZFMResourceMain; //主页 的资源bundle
 FOUNDATION_EXTERN NSString * const ZFMResourceListen; // 我听资源bundle
+FOUNDATION_EXTERN NSString * const ZFMResourcePlayer; // 播放界面资源bundle

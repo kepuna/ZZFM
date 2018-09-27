@@ -41,6 +41,7 @@ NSString * const DNImageNavBackIcon = @"DNImageNavBackIcon";
         _colorLine = [self _colorWithHexString:@"e6e6e6"];
         _colorBlack32 = [self _colorWithHexString:@"323232"];
         _colorGray96 = [self _colorWithHexString:@"969696"];
+        _colorWhite = [self _colorWithHexString:@"FFFFFF"];
     }
     return self;
 }

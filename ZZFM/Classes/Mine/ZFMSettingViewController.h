@@ -10,4 +10,6 @@
 
 @interface ZFMSettingViewController : UIViewController
 
+- (instancetype)initWithItemTitles:(NSArray <NSString *>*)titles controllers:(NSArray<UIViewController *> *)controllers headerView:(UIView *)headerView;
+
 @end

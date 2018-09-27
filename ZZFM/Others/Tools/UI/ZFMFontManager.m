@@ -37,6 +37,8 @@
         _size50PingFangSC_Medium = [UIFont fontWithName:@"PingFangSC-Medium" size:50];
         
         
+        _size10PingFangSC_Regular = [UIFont fontWithName:@"PingFangSC-Regular" size:10];
+        _size11PingFangSC_Regular = [UIFont fontWithName:@"PingFangSC-Regular" size:11];
         _size12PingFangSC_Regular = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
         _size13PingFangSC_Regular = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
         _size14PingFangSC_Regular = [UIFont fontWithName:@"PingFangSC-Regular" size:14];

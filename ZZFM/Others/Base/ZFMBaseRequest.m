@@ -44,7 +44,11 @@
             
             ZFMResponseModel *responseModel = [ZFMResponseModel yy_modelWithDictionary:responseObject];
             if (responseModel.ret == 0) {
-                completionBlock(YES,responseModel, nil);
+                if (responseModel.data) {
+                   completionBlock(YES,responseModel, nil);
+                } else {
+                   completionBlock(YES,responseObject, nil);
+                }
             } else {
                 completionBlock(NO,responseObject, nil);
             }

@@ -41,6 +41,8 @@ FOUNDATION_EXTERN NSString * const DNImageNavBackIcon; // 返回按钮图标
 @property (nonatomic, readonly, copy) UIColor *colorGray96;
 /// 底线的颜色
 @property (nonatomic, readonly, copy) UIColor *colorLine;
+/// 白色
+@property (nonatomic, readonly, copy) UIColor *colorWhite;
 
 + (instancetype)manager;
 

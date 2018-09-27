@@ -3,3 +3,4 @@
 
 NSString * const ZFMResourceMain = @"ZFMResourceMain";
 NSString * const ZFMResourceListen = @"ZFMResourceListen";
+NSString * const ZFMResourcePlayer = @"ZFMResourcePlayer";

@@ -17,6 +17,10 @@
 /// cell调用的布局方法
 - (void)setLayout:(id<ZFMLayoutProtocol>)layoutModel;
 - (void)layout:(UIView *)view;
+/// collectionView中itemSize的大小
 - (CGSize)itemSize;
+/// cell等控件的高度
+- (CGFloat)totalHeight;
+
 
 @end

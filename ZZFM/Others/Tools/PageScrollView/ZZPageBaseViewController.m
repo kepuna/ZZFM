@@ -11,9 +11,9 @@
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 
+
 @interface ZZPageBaseViewController ()
 
-@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) NSInteger rowCount;
 
 @end
