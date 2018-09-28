@@ -26,7 +26,7 @@
 }
 
 - (NSString *)duration {
-    return [NSString zz_stringMSWithSecond:[_duration integerValue]];
+    return [NSString zz_stringHMSWithSecond:[_duration integerValue]];
 }
 
 - (NSString *)createdAt {

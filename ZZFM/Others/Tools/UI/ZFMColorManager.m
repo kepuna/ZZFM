@@ -13,6 +13,8 @@ NSString * const DNColorButtonTitleNormal = @"DNColorButtonTitleNormal";
 NSString * const DNColorButtonBackground = @"DNColorButtonBackground";
 NSString * const DNImageNavBackIcon = @"DNImageNavBackIcon";
 
+#define UIColorRGB(_red_, _green_, _blue_, _alpha_) [UIColor colorWithRed:(_red_)/255.0 green:(_green_)/255.0 blue:(_blue_)/255.0 alpha:(_alpha_)]
+
 @implementation ZFMColorManager
 
 #pragma mark - Intial Methods
@@ -42,6 +44,7 @@ NSString * const DNImageNavBackIcon = @"DNImageNavBackIcon";
         _colorBlack32 = [self _colorWithHexString:@"323232"];
         _colorGray96 = [self _colorWithHexString:@"969696"];
         _colorWhite = [self _colorWithHexString:@"FFFFFF"];
+        _colorSliderProgress = UIColorRGB(242, 77, 51, 1);
     }
     return self;
 }

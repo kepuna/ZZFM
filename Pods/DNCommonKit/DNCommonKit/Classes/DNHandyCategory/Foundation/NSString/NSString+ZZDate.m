@@ -22,7 +22,7 @@
 
 /**字符串时间戳转date*/
 -(NSDate *)zz_dateFromTimeInterval{
-   
+    
     NSTimeInterval interval = [self doubleValue]; // 把时间戳转化成时间
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:interval];
     return date;
@@ -123,7 +123,7 @@
         } else if (createDate.zz_isDayAfterTomorrow) {
             return @"后天";
         } else if (createDate.zz_isThreeToThirtyDay) {
-             return [NSString stringWithFormat:@"%zd天后",-createDate.zz_daysBeforToday];
+            return [NSString stringWithFormat:@"%zd天后",-createDate.zz_daysBeforToday];
         } else {
             return [NSString stringWithFormat:@"%zd个月后",-createDate.zz_mouthBeforMouth];
         }
@@ -151,22 +151,25 @@
 
 + (NSString *)zz_stringHMSWithSecond:(NSUInteger)second {
     
-    NSString *str_hour = [NSString stringWithFormat:@"%02ld", second / 3600];
-    NSString *str_minute = [NSString stringWithFormat:@"%02ld", (second % 3600) / 60];
-    NSString *str_second = [NSString stringWithFormat:@"%02ld", second % 60];
-    return [NSString stringWithFormat:@"%@:%@:%@", str_hour, str_minute, str_second];
-}
-
-+ (NSString *)zz_stringMSWithSecond:(NSUInteger)second {
-    NSString *str_minute = [NSString stringWithFormat:@"%02ld", second / 60];
-    NSString *str_second = [NSString stringWithFormat:@"%02ld", second % 60];
-    return [NSString stringWithFormat:@"%@:%@", str_minute, str_second];
+    NSInteger minute = [[NSString stringWithFormat:@"%02ld", second / 60] integerValue];
+    NSInteger sec = [[NSString stringWithFormat:@"%02ld", second % 60] integerValue];
+    NSInteger hour = 0;
+    
+    if (minute >= 60) {
+        hour = minute / 60;
+        minute = minute % 60;
+        if (hour > 0) {
+            return [NSString stringWithFormat:@"%02ld:%02ld:%02ld",(long)hour,(long)minute,(long)sec];
+        }
+    }
+    return [NSString stringWithFormat:@"%02ld:%02ld",(long)minute,(long)sec];
+    
 }
 
 
 + (NSString *)zz_timeStampForNow {
     NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
-
+    
     NSTimeInterval a=[dat timeIntervalSince1970];
     NSString*timeString = [NSString stringWithFormat:@"%0.f", a];
     return timeString;

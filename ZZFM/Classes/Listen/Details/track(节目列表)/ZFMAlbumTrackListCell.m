@@ -98,7 +98,7 @@
 - (UIButton *)downloadButton {
     if (_downloadButton == nil) {
         _downloadButton = [UIButton buttonWithType:UIButtonTypeCustom];
-                [_downloadButton setImage:[UIImage zz_imageName:@"cell_download" inBundle:ZFMResourceListen] forState:UIControlStateNormal];
+                [_downloadButton setImage:[UIImage zz_imageName:@"downloadAlbum_30x30_" inBundle:ZFMResourcePlayer] forState:UIControlStateNormal];
     }
     return _downloadButton;
 }

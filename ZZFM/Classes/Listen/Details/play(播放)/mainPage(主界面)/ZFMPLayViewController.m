@@ -12,11 +12,25 @@
 #import "ZFMAlbumDetailViewModel.h"
 #import "ZFMPlayItemModel.h"
 #import "ZFMAlbumDetailModel.h"
+#import "DDComponent.h"
+#import "ZFMPlayerComponent.h"
+#import "ZFMPlayAlbumInforComponent.h"
+#import "ZFMPlayRecommendComponent.h"
+#import "ZFMPlayArchorInforComponent.h"
+#import "ZFMPlayCommendComponent.h"
 
 @interface ZFMPLayViewController ()
 
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong) ZFMPlayItemRequest *playItemRequest;
 @property (nonatomic, strong) ZFMAlbumDetailViewModel *viewModel;
+@property (nonatomic, strong) DDCollectionViewRootComponent *rootComponent; // 组件root容器
+@property (nonatomic, strong) ZFMPlayerComponent *playerComponent; // 播放器组件
+@property (nonatomic, strong) ZFMPlayAlbumInforComponent *albumInforComponent; // 专辑简介组件
+@property (nonatomic, strong) ZFMPlayRecommendComponent *recommendComponent; // 相关推荐组件
+@property (nonatomic, strong) ZFMPlayArchorInforComponent *archorInforComponent; // 作者简介组件
+@property (nonatomic, strong) ZFMPlayCommendComponent *commendComponent; // 评论列表组件
 
 @end
 
@@ -34,8 +48,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [ZFMColorManager manager].colorMainPage;
+    
     [self __configNavigationBar];
+    [self.view addSubview:self.collectionView];
+    self.rootComponent.subComponents = @[self.playerComponent, self.albumInforComponent, self.recommendComponent, self.archorInforComponent, self.commendComponent];
+
 }
 
 #pragma mark - Response Event
@@ -43,7 +61,7 @@
     
     self.playItemRequest.albumId = albumID;
     self.playItemRequest.trackUid = trackID;
-    self.playItemRequest.isLoger = YES;
+//    self.playItemRequest.isLoger = YES;
     
     [[self.viewModel requestPlayItemDetail:self.playItemRequest] subscribeNext:^(ZFMPlayItemModel *itemModel) {
         NSLog(@"-----%@",itemModel.commentInfo.list);
@@ -77,6 +95,68 @@
 }
 
 #pragma mark - Getters & Setters
+#pragma mark - Getters & Setters
+- (UICollectionView *)collectionView {
+    if (_collectionView == nil) {
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.flowLayout];
+        _collectionView.width = SCREEN_WIDTH;
+        _collectionView.height = self.view.height;
+        _collectionView.left = self.view.left;
+        _collectionView.top = self.view.top;
+        _collectionView.backgroundColorSkinKey = DNColorMainPage;;
+    }
+    return _collectionView;
+}
+
+- (UICollectionViewFlowLayout *)flowLayout {
+    if (_flowLayout == nil) {
+        _flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    }
+    return _flowLayout;
+}
+
+- (DDCollectionViewRootComponent *)rootComponent {
+    if (_rootComponent == nil) {
+        _rootComponent = [[DDCollectionViewRootComponent alloc] initWithCollectionView:self.collectionView bind:YES];
+    }
+    return _rootComponent;
+}
+
+- (ZFMPlayerComponent *)playerComponent {
+    if (_playerComponent == nil) {
+        _playerComponent = [[ZFMPlayerComponent alloc] init];
+    }
+    return _playerComponent;
+}
+
+- (ZFMPlayAlbumInforComponent *)albumInforComponent {
+    if (_albumInforComponent == nil) {
+        _albumInforComponent = [[ZFMPlayAlbumInforComponent alloc] init];
+    }
+    return _albumInforComponent;
+}
+
+- (ZFMPlayRecommendComponent *)recommendComponent {
+    if (_recommendComponent == nil) {
+        _recommendComponent = [[ZFMPlayRecommendComponent alloc] init];
+    }
+    return _recommendComponent;
+}
+
+- (ZFMPlayArchorInforComponent *)archorInforComponent {
+    if (_archorInforComponent == nil) {
+        _archorInforComponent = [[ZFMPlayArchorInforComponent alloc] init];
+    }
+    return _archorInforComponent;
+}
+
+- (ZFMPlayCommendComponent *)commendComponent {
+    if (_commendComponent == nil) {
+        _commendComponent = [[ZFMPlayCommendComponent alloc] init];
+    }
+    return _commendComponent;
+}
+
 - (ZFMPlayItemRequest *)playItemRequest {
     if (_playItemRequest == nil) {
         _playItemRequest = [[ZFMPlayItemRequest alloc] init];
@@ -94,6 +174,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    NSLog(@"-------XXXX-------");
 }
 
 /*

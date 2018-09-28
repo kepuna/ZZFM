@@ -27,8 +27,6 @@
 + (NSString *)zz_timeStampForNow ;
 /** 传入秒数返回 HH:mm:ss 格式字符串 */
 + (NSString *)zz_stringHMSWithSecond:(NSUInteger)second;
-/** 传入秒数返回 mm:ss 格式字符串 */
-+ (NSString *)zz_stringMSWithSecond:(NSUInteger)second;
 /// 传入时间戳字符串 返回 yyyy-MM-dd
 + (NSString *)zz_getDateStringWithTimeInterval:(NSString *)timeInterStr;
 

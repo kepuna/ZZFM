@@ -90,10 +90,20 @@
 		B1AA0D74213E18E000155A91 /* ZFMListenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AA0D6C213E18DF00155A91 /* ZFMListenViewController.m */; };
 		B1AA0D77213E192F00155A91 /* ZFMAlbumDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AA0D76213E192F00155A91 /* ZFMAlbumDetailViewController.m */; };
 		B1C2FC95215A45AA00059C7A /* ZFMAlbumTrackListCellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FC94215A45AA00059C7A /* ZFMAlbumTrackListCellFrameModel.m */; };
-		B1C2FC99215B711800059C7A /* ZFMPLayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FC98215B711800059C7A /* ZFMPLayViewController.m */; };
 		B1C2FC9B215B746500059C7A /* ZFMResourcePlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1C2FC9A215B746500059C7A /* ZFMResourcePlayer.bundle */; };
-		B1C2FC9E215B7E2B00059C7A /* ZFMPlayItemRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FC9D215B7E2B00059C7A /* ZFMPlayItemRequest.m */; };
-		B1C2FCA1215B8E1400059C7A /* ZFMPlayItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCA0215B8E1400059C7A /* ZFMPlayItemModel.m */; };
+		B1C2FCC6215C7A0D00059C7A /* ZFMPlayAlbumInforComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCC5215C7A0D00059C7A /* ZFMPlayAlbumInforComponent.m */; };
+		B1C2FCC9215C7B0A00059C7A /* ZFMPlayAlbumInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCC8215C7B0A00059C7A /* ZFMPlayAlbumInfoCollectionViewCell.m */; };
+		B1C2FCD0215C7CD200059C7A /* ZFMPlayerComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCCE215C7CD200059C7A /* ZFMPlayerComponent.m */; };
+		B1C2FCD1215C7CD200059C7A /* ZFMPlayerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCCF215C7CD200059C7A /* ZFMPlayerCollectionViewCell.m */; };
+		B1C2FCD9215C7D3600059C7A /* ZFMPlayItemRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCD6215C7D3600059C7A /* ZFMPlayItemRequest.m */; };
+		B1C2FCDA215C7D3600059C7A /* ZFMPLayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCD7215C7D3600059C7A /* ZFMPLayViewController.m */; };
+		B1C2FCDB215C7D3600059C7A /* ZFMPlayItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCD8215C7D3600059C7A /* ZFMPlayItemModel.m */; };
+		B1C2FCDE215C803500059C7A /* ZFMPlayRecommendComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCDD215C803500059C7A /* ZFMPlayRecommendComponent.m */; };
+		B1C2FCE3215C80C400059C7A /* ZFMPlayArchorInforComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCE2215C80C400059C7A /* ZFMPlayArchorInforComponent.m */; };
+		B1C2FCE6215C80EF00059C7A /* ZFMPlayCommendComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCE5215C80EF00059C7A /* ZFMPlayCommendComponent.m */; };
+		B1C2FCE9215C812800059C7A /* ZFMPlayRecommendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCE8215C812800059C7A /* ZFMPlayRecommendCollectionViewCell.m */; };
+		B1C2FCEC215C813A00059C7A /* ZFMPlayArchorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCEB215C813A00059C7A /* ZFMPlayArchorCollectionViewCell.m */; };
+		B1C2FCEF215C814600059C7A /* ZFMPlayCommendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C2FCEE215C814600059C7A /* ZFMPlayCommendCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,13 +318,33 @@
 		B1AA0D76213E192F00155A91 /* ZFMAlbumDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMAlbumDetailViewController.m; sourceTree = "<group>"; };
 		B1C2FC93215A45AA00059C7A /* ZFMAlbumTrackListCellFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMAlbumTrackListCellFrameModel.h; sourceTree = "<group>"; };
 		B1C2FC94215A45AA00059C7A /* ZFMAlbumTrackListCellFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMAlbumTrackListCellFrameModel.m; sourceTree = "<group>"; };
-		B1C2FC97215B711800059C7A /* ZFMPLayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPLayViewController.h; sourceTree = "<group>"; };
-		B1C2FC98215B711800059C7A /* ZFMPLayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPLayViewController.m; sourceTree = "<group>"; };
 		B1C2FC9A215B746500059C7A /* ZFMResourcePlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZFMResourcePlayer.bundle; sourceTree = "<group>"; };
-		B1C2FC9C215B7E2B00059C7A /* ZFMPlayItemRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayItemRequest.h; sourceTree = "<group>"; };
-		B1C2FC9D215B7E2B00059C7A /* ZFMPlayItemRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayItemRequest.m; sourceTree = "<group>"; };
-		B1C2FC9F215B8E1400059C7A /* ZFMPlayItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayItemModel.h; sourceTree = "<group>"; };
-		B1C2FCA0215B8E1400059C7A /* ZFMPlayItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayItemModel.m; sourceTree = "<group>"; };
+		B1C2FCC4215C7A0D00059C7A /* ZFMPlayAlbumInforComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayAlbumInforComponent.h; sourceTree = "<group>"; };
+		B1C2FCC5215C7A0D00059C7A /* ZFMPlayAlbumInforComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayAlbumInforComponent.m; sourceTree = "<group>"; };
+		B1C2FCC7215C7B0A00059C7A /* ZFMPlayAlbumInfoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayAlbumInfoCollectionViewCell.h; sourceTree = "<group>"; };
+		B1C2FCC8215C7B0A00059C7A /* ZFMPlayAlbumInfoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayAlbumInfoCollectionViewCell.m; sourceTree = "<group>"; };
+		B1C2FCCC215C7CD200059C7A /* ZFMPlayerComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMPlayerComponent.h; sourceTree = "<group>"; };
+		B1C2FCCD215C7CD200059C7A /* ZFMPlayerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMPlayerCollectionViewCell.h; sourceTree = "<group>"; };
+		B1C2FCCE215C7CD200059C7A /* ZFMPlayerComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayerComponent.m; sourceTree = "<group>"; };
+		B1C2FCCF215C7CD200059C7A /* ZFMPlayerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayerCollectionViewCell.m; sourceTree = "<group>"; };
+		B1C2FCD3215C7D3600059C7A /* ZFMPlayItemRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMPlayItemRequest.h; sourceTree = "<group>"; };
+		B1C2FCD4215C7D3600059C7A /* ZFMPLayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMPLayViewController.h; sourceTree = "<group>"; };
+		B1C2FCD5215C7D3600059C7A /* ZFMPlayItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMPlayItemModel.h; sourceTree = "<group>"; };
+		B1C2FCD6215C7D3600059C7A /* ZFMPlayItemRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayItemRequest.m; sourceTree = "<group>"; };
+		B1C2FCD7215C7D3600059C7A /* ZFMPLayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMPLayViewController.m; sourceTree = "<group>"; };
+		B1C2FCD8215C7D3600059C7A /* ZFMPlayItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayItemModel.m; sourceTree = "<group>"; };
+		B1C2FCDC215C803500059C7A /* ZFMPlayRecommendComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayRecommendComponent.h; sourceTree = "<group>"; };
+		B1C2FCDD215C803500059C7A /* ZFMPlayRecommendComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayRecommendComponent.m; sourceTree = "<group>"; };
+		B1C2FCE1215C80C400059C7A /* ZFMPlayArchorInforComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayArchorInforComponent.h; sourceTree = "<group>"; };
+		B1C2FCE2215C80C400059C7A /* ZFMPlayArchorInforComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayArchorInforComponent.m; sourceTree = "<group>"; };
+		B1C2FCE4215C80EF00059C7A /* ZFMPlayCommendComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayCommendComponent.h; sourceTree = "<group>"; };
+		B1C2FCE5215C80EF00059C7A /* ZFMPlayCommendComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayCommendComponent.m; sourceTree = "<group>"; };
+		B1C2FCE7215C812800059C7A /* ZFMPlayRecommendCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayRecommendCollectionViewCell.h; sourceTree = "<group>"; };
+		B1C2FCE8215C812800059C7A /* ZFMPlayRecommendCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayRecommendCollectionViewCell.m; sourceTree = "<group>"; };
+		B1C2FCEA215C813A00059C7A /* ZFMPlayArchorCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayArchorCollectionViewCell.h; sourceTree = "<group>"; };
+		B1C2FCEB215C813A00059C7A /* ZFMPlayArchorCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayArchorCollectionViewCell.m; sourceTree = "<group>"; };
+		B1C2FCED215C814600059C7A /* ZFMPlayCommendCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMPlayCommendCollectionViewCell.h; sourceTree = "<group>"; };
+		B1C2FCEE215C814600059C7A /* ZFMPlayCommendCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFMPlayCommendCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -807,14 +837,82 @@
 		B1C2FC96215B70F000059C7A /* play(播放) */ = {
 			isa = PBXGroup;
 			children = (
-				B1C2FC97215B711800059C7A /* ZFMPLayViewController.h */,
-				B1C2FC98215B711800059C7A /* ZFMPLayViewController.m */,
-				B1C2FC9C215B7E2B00059C7A /* ZFMPlayItemRequest.h */,
-				B1C2FC9D215B7E2B00059C7A /* ZFMPlayItemRequest.m */,
-				B1C2FC9F215B8E1400059C7A /* ZFMPlayItemModel.h */,
-				B1C2FCA0215B8E1400059C7A /* ZFMPlayItemModel.m */,
+				B1C2FCD2215C7D3600059C7A /* mainPage(主界面) */,
+				B1C2FCDF215C80AB00059C7A /* archorInfor(主播简介) */,
+				B1C2FCE0215C80AB00059C7A /* commend(评论列表) */,
+				B1C2FCCB215C7CD200059C7A /* player(播放器) */,
+				B1C2FCCA215C7CD200059C7A /* recommend（相关推荐） */,
+				B1C2FCA9215C796A00059C7A /* albumInfor(专辑简介) */,
 			);
 			path = "play(播放)";
+			sourceTree = "<group>";
+		};
+		B1C2FCA9215C796A00059C7A /* albumInfor(专辑简介) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2FCC4215C7A0D00059C7A /* ZFMPlayAlbumInforComponent.h */,
+				B1C2FCC5215C7A0D00059C7A /* ZFMPlayAlbumInforComponent.m */,
+				B1C2FCC7215C7B0A00059C7A /* ZFMPlayAlbumInfoCollectionViewCell.h */,
+				B1C2FCC8215C7B0A00059C7A /* ZFMPlayAlbumInfoCollectionViewCell.m */,
+			);
+			path = "albumInfor(专辑简介)";
+			sourceTree = "<group>";
+		};
+		B1C2FCCA215C7CD200059C7A /* recommend（相关推荐） */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2FCDC215C803500059C7A /* ZFMPlayRecommendComponent.h */,
+				B1C2FCDD215C803500059C7A /* ZFMPlayRecommendComponent.m */,
+				B1C2FCE7215C812800059C7A /* ZFMPlayRecommendCollectionViewCell.h */,
+				B1C2FCE8215C812800059C7A /* ZFMPlayRecommendCollectionViewCell.m */,
+			);
+			path = "recommend（相关推荐）";
+			sourceTree = "<group>";
+		};
+		B1C2FCCB215C7CD200059C7A /* player(播放器) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2FCCC215C7CD200059C7A /* ZFMPlayerComponent.h */,
+				B1C2FCCE215C7CD200059C7A /* ZFMPlayerComponent.m */,
+				B1C2FCCD215C7CD200059C7A /* ZFMPlayerCollectionViewCell.h */,
+				B1C2FCCF215C7CD200059C7A /* ZFMPlayerCollectionViewCell.m */,
+			);
+			path = "player(播放器)";
+			sourceTree = "<group>";
+		};
+		B1C2FCD2215C7D3600059C7A /* mainPage(主界面) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2FCD4215C7D3600059C7A /* ZFMPLayViewController.h */,
+				B1C2FCD7215C7D3600059C7A /* ZFMPLayViewController.m */,
+				B1C2FCD5215C7D3600059C7A /* ZFMPlayItemModel.h */,
+				B1C2FCD8215C7D3600059C7A /* ZFMPlayItemModel.m */,
+				B1C2FCD6215C7D3600059C7A /* ZFMPlayItemRequest.m */,
+				B1C2FCD3215C7D3600059C7A /* ZFMPlayItemRequest.h */,
+			);
+			path = "mainPage(主界面)";
+			sourceTree = "<group>";
+		};
+		B1C2FCDF215C80AB00059C7A /* archorInfor(主播简介) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2FCE1215C80C400059C7A /* ZFMPlayArchorInforComponent.h */,
+				B1C2FCE2215C80C400059C7A /* ZFMPlayArchorInforComponent.m */,
+				B1C2FCEA215C813A00059C7A /* ZFMPlayArchorCollectionViewCell.h */,
+				B1C2FCEB215C813A00059C7A /* ZFMPlayArchorCollectionViewCell.m */,
+			);
+			path = "archorInfor(主播简介)";
+			sourceTree = "<group>";
+		};
+		B1C2FCE0215C80AB00059C7A /* commend(评论列表) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2FCE4215C80EF00059C7A /* ZFMPlayCommendComponent.h */,
+				B1C2FCE5215C80EF00059C7A /* ZFMPlayCommendComponent.m */,
+				B1C2FCED215C814600059C7A /* ZFMPlayCommendCollectionViewCell.h */,
+				B1C2FCEE215C814600059C7A /* ZFMPlayCommendCollectionViewCell.m */,
+			);
+			path = "commend(评论列表)";
 			sourceTree = "<group>";
 		};
 		E9A0FBBDD9EAB5714D0572A2 /* Frameworks */ = {
@@ -1044,6 +1142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19278AB2154F6690007D8E6 /* ZFMAlbumAnchorComponent.m in Sources */,
+				B1C2FCD1215C7CD200059C7A /* ZFMPlayerCollectionViewCell.m in Sources */,
+				B1C2FCDA215C7D3600059C7A /* ZFMPLayViewController.m in Sources */,
 				B19F74392122F3410083A269 /* ZFMColorManager.m in Sources */,
 				B1387AA22100299500961510 /* AppServiceModel.m in Sources */,
 				B19278A82154F4110007D8E6 /* ZFMAlbumIntroContentComponent.m in Sources */,
@@ -1055,11 +1155,10 @@
 				B12BEB5821522BD900BB7F89 /* ZFMBaseViewModel.m in Sources */,
 				B1387A52210027A200961510 /* main.m in Sources */,
 				B19F742F2122F3190083A269 /* UIViewController+DNPageController.m in Sources */,
-				B1C2FCA1215B8E1400059C7A /* ZFMPlayItemModel.m in Sources */,
 				B12BEB4F21511AD700BB7F89 /* ZFMAlbumDetailRequest.m in Sources */,
 				B19F73EC2122D6F90083A269 /* ZFMCategoryViewController.m in Sources */,
-				B1C2FC9E215B7E2B00059C7A /* ZFMPlayItemRequest.m in Sources */,
 				B19F74292122F3190083A269 /* DDTableViewSectionComponent.m in Sources */,
+				B1C2FCC6215C7A0D00059C7A /* ZFMPlayAlbumInforComponent.m in Sources */,
 				B19F73E02122CAC00083A269 /* ZFMHomeViewModel.m in Sources */,
 				B12BEB352150D1ED00BB7F89 /* DNNetworkManager+SSL.m in Sources */,
 				B1C2FC95215A45AA00059C7A /* ZFMAlbumTrackListCellFrameModel.m in Sources */,
@@ -1067,20 +1166,26 @@
 				B19278A12154CA3A0007D8E6 /* ZFMAlbumHeaderFrameModel.m in Sources */,
 				B19279032159D9630007D8E6 /* ZZStyle2PageBaseViewController.m in Sources */,
 				B19278982153B8740007D8E6 /* ZZHeaderView.m in Sources */,
+				B1C2FCD9215C7D3600059C7A /* ZFMPlayItemRequest.m in Sources */,
 				B19F743C2122F34F0083A269 /* ZFMFontManager.m in Sources */,
 				B1AA0D77213E192F00155A91 /* ZFMAlbumDetailViewController.m in Sources */,
+				B1C2FCC9215C7B0A00059C7A /* ZFMPlayAlbumInfoCollectionViewCell.m in Sources */,
 				B19278892153B3070007D8E6 /* ZZTableView.m in Sources */,
 				B1387AD72100356500961510 /* ZFMConsts.m in Sources */,
 				B12BEB3B21510C0500BB7F89 /* ZFMBaseRequest.m in Sources */,
 				B12BEB4521510E3C00BB7F89 /* ZFMResponseModel.m in Sources */,
-				B1C2FC99215B711800059C7A /* ZFMPLayViewController.m in Sources */,
 				B19279002159D40A0007D8E6 /* UINavigationBar+NavAlpha.m in Sources */,
 				B1387AE6210036C000961510 /* ZFMMineViewController.m in Sources */,
 				B12BEB332150D1ED00BB7F89 /* DNNetworkManager.m in Sources */,
+				B1C2FCD0215C7CD200059C7A /* ZFMPlayerComponent.m in Sources */,
+				B1C2FCEF215C814600059C7A /* ZFMPlayCommendCollectionViewCell.m in Sources */,
 				B1387A44210027A100961510 /* AppDelegate.m in Sources */,
+				B1C2FCDE215C803500059C7A /* ZFMPlayRecommendComponent.m in Sources */,
 				B19F74342122F3190083A269 /* DNPageCollectionViewCell.m in Sources */,
 				B19F74352122F3190083A269 /* DNPageScrollView.m in Sources */,
 				B19F74332122F3190083A269 /* DNPageCollectionViewFlowLayout.m in Sources */,
+				B1C2FCE3215C80C400059C7A /* ZFMPlayArchorInforComponent.m in Sources */,
+				B1C2FCE6215C80EF00059C7A /* ZFMPlayCommendComponent.m in Sources */,
 				B19279062159DB2C0007D8E6 /* ZZStyle2PageViewController.m in Sources */,
 				B19F742D2122F3190083A269 /* DNContentScrollView.m in Sources */,
 				B19278AE2154FAA20007D8E6 /* ZFMAlbumRelatedComponent.m in Sources */,
@@ -1088,8 +1193,10 @@
 				B19F73EF2122D8B20083A269 /* ZFMHomeChildFactory.m in Sources */,
 				B12BEB4821510FF800BB7F89 /* ZFMListenRecommendListCell.m in Sources */,
 				B1387AE7210036C000961510 /* ZFMDiscoverViewController.m in Sources */,
+				B1C2FCEC215C813A00059C7A /* ZFMPlayArchorCollectionViewCell.m in Sources */,
 				B12BEB342150D1ED00BB7F89 /* DNNetworkCache.m in Sources */,
 				B19F74222122F3190083A269 /* DDCollectionViewComponent.m in Sources */,
+				B1C2FCE9215C812800059C7A /* ZFMPlayRecommendCollectionViewCell.m in Sources */,
 				B19F74232122F3190083A269 /* DDCollectionViewSectionGroupComponent.mm in Sources */,
 				B19F742A2122F3190083A269 /* DDTableViewItemComponent.m in Sources */,
 				B19279092159E5280007D8E6 /* ZFM5ViewController.m in Sources */,
@@ -1097,6 +1204,7 @@
 				B19278862153B2EC0007D8E6 /* ZZPageBaseViewController.m in Sources */,
 				B19278932153B7C20007D8E6 /* ThirdViewController.m in Sources */,
 				B19278B52154FCEF0007D8E6 /* ZFMAlbumTrackListViewController.m in Sources */,
+				B1C2FCDB215C7D3600059C7A /* ZFMPlayItemModel.m in Sources */,
 				B19278B8215501D90007D8E6 /* ZFMAlbumTrackListCell.m in Sources */,
 				B192789E2154C4770007D8E6 /* ZFMAlbumHeaderView.m in Sources */,
 				B1AA0D72213E18E000155A91 /* ZFMListenRecommendListComponent.m in Sources */,

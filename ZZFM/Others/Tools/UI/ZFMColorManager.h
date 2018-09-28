@@ -39,6 +39,9 @@ FOUNDATION_EXTERN NSString * const DNImageNavBackIcon; // 返回按钮图标
 @property (nonatomic, readonly, copy) UIColor *colorPageScrollNormal;
 @property (nonatomic, readonly, copy) UIColor *colorBlack32;
 @property (nonatomic, readonly, copy) UIColor *colorGray96;
+/// 播放界面slider的颜色
+@property (nonatomic, readonly, copy) UIColor *colorSliderProgress;
+
 /// 底线的颜色
 @property (nonatomic, readonly, copy) UIColor *colorLine;
 /// 白色

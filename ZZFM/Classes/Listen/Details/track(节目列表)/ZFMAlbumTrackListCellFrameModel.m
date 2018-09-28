@@ -68,9 +68,9 @@
     view.releaseAtLabel.top = view.titleLabel.top;
     
     view.downloadButton.width = 30;
-    view.downloadButton.height = 25;
+    view.downloadButton.height = 30;
     view.downloadButton.right = view.contentView.right - marginLeft;
-    view.downloadButton.top = view.playDurationButton.top;
+    view.downloadButton.top = view.playDurationButton.top - 5;
     
     view.orderLabel.text = self.model.orderNo;
     view.titleLabel.text = self.model.title;
@@ -79,7 +79,7 @@
     [view.commentCountButton setTitle:self.model.comments forState:UIControlStateNormal];
     [view.playDurationButton setTitle:self.model.duration forState:UIControlStateNormal];
     
-    self.cacheHeight = CGRectGetMaxY(view.downloadButton.frame) + marginTop;
+    self.cacheHeight = CGRectGetMaxY(view.downloadButton.frame) + 2;
 
 }
 
