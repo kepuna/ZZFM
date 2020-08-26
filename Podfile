@@ -10,16 +10,21 @@ target 'ZZFM' do
 # Pods for ZZFM
 
 #pod 'CTNetworking'
-pod 'SDWebImage'
-pod 'YYModel'
+pod 'SDWebImage','4.4.1'
+pod 'YYModel','1.0.4'
 pod 'ReactiveCocoa','2.5'
 #pod 'DDComponent','0.5.5'
 pod 'DNMainFramework'
-pod 'DDSkin'
-pod 'YYCache'
-pod 'AFNetworking'
-pod 'MJRefresh'
-pod 'YYText'
+pod 'DDSkin','0.0.1'
+pod 'YYCache','1.0.4'
+pod 'AFNetworking' ,'3.2.1'
+pod 'MJRefresh', '3.1.15.7'
+pod 'YYText','1.0.7'
 pod 'DNCommonKit'
+pod 'Masonry', '1.1.0'
+
+pod 'CYLTabBarController'
+
+
 
 end
